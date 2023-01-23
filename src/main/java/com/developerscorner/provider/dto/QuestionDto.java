@@ -2,12 +2,14 @@ package com.developerscorner.provider.dto;
 
 import javax.validation.constraints.NotNull;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 
 
 @Data
-@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 public class QuestionDto {
 	
 	@NotNull(message = "Username is required field")

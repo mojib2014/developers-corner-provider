@@ -1,8 +1,9 @@
 package com.developerscorner.provider.service;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,6 +18,8 @@ public class UserService {
 
 	@Autowired
 	private UserRepository userRepository;
+	@Autowired
+	private PasswordEncoder passwordEncoder;
 
 	public List<User> findAllUsers() {
 		return userRepository.findAll();
@@ -38,7 +41,7 @@ public class UserService {
 				.email(user.getEmail())
 				.password(user.getPassword())
 				.type(user.getType())
-				.createdAt(LocalDate.now()).build();
+				.createdAt(LocalDateTime.now()).build();
 		
 		userRepository.save(newUser);
 	}
@@ -49,7 +52,7 @@ public class UserService {
 		user.setLastName(dto.getLastName());
 		user.setNickName(dto.getNickName());
 		user.setEmail(dto.getEmail());
-		user.setPassword(dto.getPassword());
+		user.setPassword(passwordEncoder.encode(dto.getPassword()));
 		user.setType(dto.getType());
 
 		userRepository.save(user);

@@ -2,6 +2,7 @@ package com.developerscorner.provider.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -52,7 +53,7 @@ public class UserController {
 	}
 	
 	//----------------- Register user ----------------------------
-	@PostMapping(value = "/register")
+	@PostMapping("/register")
 	public ResponseEntity<Void> register(@RequestBody @Valid UserRegistrationDto form) {
 		logger.info("Registering user {}", form);
 		userService.saveUser(form);
@@ -60,7 +61,7 @@ public class UserController {
 	}
 	
 	//------------------- Login user --------------------------
-	@PostMapping(value = "/login")
+	@PostMapping("/login")
 	@ResponseBody
 	public ModelAndView login(@Valid @ModelAttribute("loginForm") UserLoginDto form, BindingResult bindingResult) {
 		ModelAndView mv = new ModelAndView();
@@ -93,7 +94,7 @@ public class UserController {
 	}
 	
 	//------------------------- Retrieve A User By Id-----------------------------
-	@GetMapping(value = "/{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<User> getUserById(@PathVariable(value = "id") Long id) {
 		User user = userService.findById(id);
 		
@@ -101,22 +102,23 @@ public class UserController {
 	}
 	
 	//------------------------- Retrieve A User By Email -----------------------------
-	@GetMapping(value = "/email/{email}")
-	public ResponseEntity<User> getUserByEmail(@PathVariable(value="email") String email) {
+	@GetMapping("/email/{email}")
+	public ResponseEntity<User> getUserByEmail(@PathVariable(value="email") String email, HttpServletRequest request) {
+		System.out.println("/users/email -----------------------==========" + request.getHeader("Authorization"));
 		User user = userService.findByEmail(email);
 		
 		return new ResponseEntity<User>(user, HttpStatus.OK);
 	}
 	
 	//----------------------- Update a user by id -------------------
-	@PutMapping(value = "/{id}")
+	@PutMapping("/{id}")
 	public ResponseEntity<Void> updateUserById(@PathVariable(value = "id") Long id, @RequestBody @Valid UserRegistrationDto dto) {
 		System.out.println("updating -------------" + dto.toString());
 		userService.updateUser(id, dto);
 		return new ResponseEntity<>(HttpStatus.ACCEPTED);
 	}
 	
-	@DeleteMapping(value = "/{id}")
+	@DeleteMapping("/{id}")
 	public ResponseEntity<Void> deleteUserById(@PathVariable(value = "id") Long id) {
 		userService.deleteById(id);
 		

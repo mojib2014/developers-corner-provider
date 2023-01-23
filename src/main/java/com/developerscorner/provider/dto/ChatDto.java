@@ -1,13 +1,15 @@
 package com.developerscorner.provider.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Data
-@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 public class ChatDto {
 	
-	private String username;
-	private Long userId;
+	private String sender;
+	private String receiver;
 	private String message;
 }

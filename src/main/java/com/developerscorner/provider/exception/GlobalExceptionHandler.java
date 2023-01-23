@@ -15,6 +15,8 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+
+import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,40 +25,46 @@ import java.util.stream.Collectors;
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
 	@ExceptionHandler({ NotFoundException.class, UsernameNotFoundException.class })
-	public ResponseEntity<String> handleNotFoundException(ResponseEntityException e) {
+	public ResponseEntity<ApiException> handleNotFoundException(ResponseEntityException e) {
 		log.error("404 Not Found: {}", e.toString());
-		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+		ApiException ex = new ApiException(e.getMessage(), HttpStatus.NOT_FOUND, ZonedDateTime.now());
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex);
 	}
 
 	@ExceptionHandler(BadRequestException.class)
-	public ResponseEntity<String> handleBadRequestException(ResponseEntityException e) {
+	public ResponseEntity<ApiException> handleBadRequestException(ResponseEntityException e) {
 		log.error("400 Bad Request: {}", e.toString());
-		return ResponseEntity.badRequest().body(e.getMessage());
+		ApiException ex = new ApiException(e.getMessage(), HttpStatus.BAD_REQUEST, ZonedDateTime.now());
+		return ResponseEntity.badRequest().body(ex);
 	}
 
 	@ExceptionHandler(ConflictException.class)
-	public ResponseEntity<String> handleConflictException(ResponseEntityException e) {
+	public ResponseEntity<ApiException> handleConflictException(ResponseEntityException e) {
 		log.error("409 Conflict: {}", e.toString());
-		return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
+		ApiException ex = new ApiException(e.getMessage(), HttpStatus.CONFLICT, ZonedDateTime.now());
+		return ResponseEntity.status(HttpStatus.CONFLICT).body(ex);
 	}
 
 	@ExceptionHandler(UnprocessableException.class)
-	public ResponseEntity<String> handleNotCreatedException(ResponseEntityException e) {
+	public ResponseEntity<ApiException> handleNotCreatedException(ResponseEntityException e) {
 		log.error("422 Unprocessable Entity: {}", e.toString());
-		return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(e.getMessage());
+		ApiException ex = new ApiException(e.getMessage(), HttpStatus.UNPROCESSABLE_ENTITY, ZonedDateTime.now());
+		return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(ex);
 	}
 
 	@ExceptionHandler({ ForbiddenException.class, AccessDeniedException.class })
-	public ResponseEntity<String> handleForbiddenException(Exception e) {
+	public ResponseEntity<ApiException> handleForbiddenException(Exception e) {
 		log.error("403 Forbidden: {}", e.getMessage());
-		return ResponseEntity.status(HttpStatus.FORBIDDEN).body(e.getMessage());
+		ApiException ex = new ApiException(e.getMessage(), HttpStatus.FORBIDDEN, ZonedDateTime.now());
+		return ResponseEntity.status(HttpStatus.FORBIDDEN).body(ex);
 
 	}
 
 	@ExceptionHandler(UnauthorizedException.class)
-	public ResponseEntity<String> handleUnauthorizedException(ResponseEntityException e) {
+	public ResponseEntity<ApiException> handleUnauthorizedException(ResponseEntityException e) {
 		log.error("401 Unauthorized: {}", e.getMessage());
-		return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(e.getMessage());
+		ApiException ex = new ApiException(e.getMessage(), HttpStatus.UNAUTHORIZED, ZonedDateTime.now());
+		return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(ex);
 
 	}
 

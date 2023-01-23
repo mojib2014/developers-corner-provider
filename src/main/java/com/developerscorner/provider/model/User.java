@@ -1,6 +1,6 @@
 package com.developerscorner.provider.model;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
@@ -71,7 +71,8 @@ public class User implements UserDetails {
 	private Role role;
 
 	@Column(nullable = false, columnDefinition = "TIMESTAMP")
-	private LocalDate createdAt;
+//	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss")
+	private LocalDateTime createdAt;
 
 	@OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
 	@JsonBackReference("user")
