@@ -56,7 +56,7 @@ public class UserController {
 	@PostMapping("/register")
 	public ResponseEntity<Void> register(@RequestBody @Valid UserRegistrationDto form) {
 		logger.info("Registering user {}", form);
-		userService.saveUser(form);
+		userService.save(form);
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}
 	
@@ -88,7 +88,7 @@ public class UserController {
 	//-------------------- Retrieve All Users ---------------------------------
 	@GetMapping
 	public ResponseEntity<List<User>> getAllUsers(Exception e) {
-		List<User> users = userService.findAllUsers();
+		List<User> users = userService.findAll();
 		
 		return new ResponseEntity<List<User>>(users, HttpStatus.OK);
 	}
@@ -114,13 +114,13 @@ public class UserController {
 	@PutMapping("/{id}")
 	public ResponseEntity<Void> updateUserById(@PathVariable(value = "id") Long id, @RequestBody @Valid UserRegistrationDto dto) {
 		System.out.println("updating -------------" + dto.toString());
-		userService.updateUser(id, dto);
+		userService.update(id, dto);
 		return new ResponseEntity<>(HttpStatus.ACCEPTED);
 	}
 	
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Void> deleteUserById(@PathVariable(value = "id") Long id) {
-		userService.deleteById(id);
+		userService.delete(id);
 		
 		return new ResponseEntity<Void>(HttpStatus.ACCEPTED);
 	}

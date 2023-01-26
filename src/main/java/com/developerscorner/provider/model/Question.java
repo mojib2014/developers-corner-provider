@@ -1,7 +1,8 @@
 package com.developerscorner.provider.model;
 
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -39,7 +40,7 @@ public class Question {
 	private String question;
 
 	@Column(nullable = false, columnDefinition = "TIMESTAMP")
-	private LocalDate createdAt;
+	private LocalDateTime createdAt;
 
 	@ManyToOne
 	@JoinColumn(name = "userId")

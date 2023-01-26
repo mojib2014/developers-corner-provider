@@ -3,11 +3,15 @@ package com.developerscorner.provider.dto;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Data
-@RequiredArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class UserRegistrationDto {
 
 	@NotNull(message = "First Name is required and must be at least 5 characters long")

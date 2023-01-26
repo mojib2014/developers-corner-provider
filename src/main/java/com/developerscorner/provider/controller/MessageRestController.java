@@ -18,6 +18,6 @@ public class MessageRestController {
 	@GetMapping("/messages")
 	public List<ChatMessage> messages() {
 		System.out.println("/messages called ======================================");
-		return messageService.getMessages();
+		return messageService.findMessages();
 	}
 }

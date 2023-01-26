@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import com.developerscorner.provider.exception.NotFoundException;
 import com.developerscorner.provider.model.ChatMessage;
 import com.developerscorner.provider.model.ChatMessageStatus;
-import com.developerscorner.provider.model.ChatRoom;
 import com.developerscorner.provider.repository.ChatMessageRepository;
 
 @Service
@@ -16,8 +15,6 @@ public class ChatMessageService {
 
 	@Autowired
 	private ChatMessageRepository messageRepo;
-	@Autowired
-	private ChatRoomService chatRoomService;
 	
 	public void save(ChatMessage message) {
 		messageRepo.save(message);
@@ -28,9 +25,9 @@ public class ChatMessageService {
 	}
 	
 	 public List<ChatMessage> findChatMessages(Long sender, Long receiver) {
-	        ChatRoom chatRoom = chatRoomService.getChatRoom(sender, receiver);
+	        //ChatRoom chatRoom = chatRoomService.getChatRoom(sender, receiver);
 
-	        List<ChatMessage> messages = messageRepo.findBySenderAndReceiver(chatRoom.getSender(), chatRoom.getReceiver());
+	        List<ChatMessage> messages = messageRepo.findBySenderAndReceiver(sender, receiver);
 
 	        if(messages.size() > 0) {
 	            updateStatuses(sender, receiver, ChatMessageStatus.DELIVERED);
@@ -39,28 +36,30 @@ public class ChatMessageService {
 	        return messages;
 	    }
 	 
-	  public void updateStatuses(Long senderId, Long recipientId, ChatMessageStatus status) {
-//	        Query query = new Query(
-//	                Criteria
-//	                        .where("senderId").is(senderId)
-//	                        .and("recipientId").is(recipientId));
-//	        Update update = Update.update("status", status);
-//	        mongoOperations.updateMulti(query, update, ChatMessage.class);
-	    }
+	  public void updateStatuses(Long sender, Long receiver, ChatMessageStatus status) {
+		  List<ChatMessage> messages = messageRepo.findBySenderAndReceiver(sender, receiver);
+	      
+		  if(messages.size() > 0) {
+			  messages.forEach(message -> {
+				  message.setStatus(status);
+			  }); 
+		  }
+		  messageRepo.saveAll(messages);
+	 }
 	
-	public ChatMessage getMessageById(Long id) {
+	public ChatMessage findMessageById(Long id) {
 		return messageRepo.findById(id).orElseThrow(() -> new NotFoundException("Message not found"));
 	}
 	
-	public ChatMessage getMessageBySender(Long id) {
+	public ChatMessage findMessageBySender(Long id) {
 		return messageRepo.findBySender(id).orElseThrow(() -> new NotFoundException("Message not found"));
 	}
 	
-	public ChatMessage getMessageByReciever(Long id) {
+	public ChatMessage findMessageByReciever(Long id) {
 		return messageRepo.findByReceiver(id).orElseThrow(() -> new NotFoundException("Message not found"));
 	}
 	
-	public List<ChatMessage> getMessages() {
+	public List<ChatMessage> findMessages() {
 		return messageRepo.findAll();
 	}
 }
