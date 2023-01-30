@@ -36,16 +36,16 @@ public class AuthServiceImple implements AuthService {
 		User user = userRepository.findByEmail(dto.getEmail());
 	
 		if(user != null) throw new ConflictException(String.format("User already exists with email %s", user.getEmail()));
-		
-		user = User.builder().firstName(dto.getFirstName()).lastName(dto.getLastName()).nickName(dto.getNickName())
-				.email(dto.getEmail()).password(passwordEncoder.encode(dto.getPassword())).type(dto.getType())
-				.createdAt(LocalDateTime.now()).build();
-
-		userRepository.save(user);
-		String jwtToken = jwtService.generateToken(user);
-
-		return new AuthResponse(jwtToken);
-
+		else {
+			user = User.builder().firstName(dto.getFirstName()).lastName(dto.getLastName()).nickName(dto.getNickName())
+					.email(dto.getEmail()).password(passwordEncoder.encode(dto.getPassword())).type(dto.getType())
+					.createdAt(LocalDateTime.now()).build();
+			
+			userRepository.save(user);
+			String jwtToken = jwtService.generateToken(user);
+			
+			return new AuthResponse(jwtToken);			
+		}
 	}
 
 	public AuthResponse authenticate(UserLoginDto dto) {

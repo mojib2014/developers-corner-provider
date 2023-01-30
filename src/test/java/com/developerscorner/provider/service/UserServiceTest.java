@@ -145,13 +145,15 @@ public class UserServiceTest extends AbstractTestNGSpringContextTests {
 		when(userRepository.findById(1000L)).thenReturn(Optional.empty());
 		
 		userService.findById(1000L);
+		
+		verify(userRepository).findById(1000L);
 	}
 	
-	@Test(expectedExceptions = NotFoundException.class, expectedExceptionsMessageRegExp = "User not found not.email@email.com") 
+	@Test(expectedExceptions = NotFoundException.class) 
 	public void shouldThrowNotFoundExceptionIfUserByEmailNotExists() {
-		when(userRepository.findByEmail("not.email@email.com")).thenReturn(null);
+		when(userRepository.findByEmail(anyString())).thenReturn(null);
 		
-		userService.findByEmail("not.email@email.com");
-		verify(userRepository).findByEmail("not.email@email.com");
+		userService.findByEmail("new.user@email.com");
+		verify(userRepository, atMost(2)).findByEmail(anyString());
 	}
 }

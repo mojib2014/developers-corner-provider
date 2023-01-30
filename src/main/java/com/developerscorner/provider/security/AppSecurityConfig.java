@@ -31,7 +31,12 @@ public class AppSecurityConfig {
 	     .disable()
 	     .cors(cors -> cors.configurationSource(corsConfigurationSource()))
 	     .authorizeRequests()
-	     .antMatchers("/auth/**", "/h2-console/**", "/messages", "/secured-room/info?t=*", "/secured-room/**")
+	     .antMatchers("/auth/**", "/h2-console/**", 
+	    		 "/messages", "/secured-room/info?t=*",
+	    		 "/v3/api-docs/**",
+	    		 "/actuator/**",
+	    		 "/swagger-ui/**",
+	    		 "/secured-room/**")
 	     .permitAll()
 	     .anyRequest()
 	     .authenticated()

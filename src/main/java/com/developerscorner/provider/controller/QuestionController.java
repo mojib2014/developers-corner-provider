@@ -4,6 +4,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +20,9 @@ import com.developerscorner.provider.dto.QuestionDto;
 import com.developerscorner.provider.model.Question;
 import com.developerscorner.provider.service.QuestionService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+
 @RestController
 @RequestMapping(value = "/user/questions")
 public class QuestionController {
@@ -32,14 +36,18 @@ public class QuestionController {
 	}
 
 	// =================== Retrieve all questions ============
-	@GetMapping
+	@Operation(summary = "Retreives all questions")
+	@ApiResponse(responseCode = "200", description = "Found questions")
+	@GetMapping(consumes = {MediaType.APPLICATION_JSON_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
 	public ResponseEntity<List<Question>> listQuestions() throws Exception {
 		List<Question> questions = questionService.findAllQuestions();
 		return new ResponseEntity<List<Question>>(questions, HttpStatus.OK);
 	}
 	
 	// =================== Create a new question ============
-	@PostMapping
+	@Operation(summary = "Create a new question")
+	@ApiResponse(responseCode = "201", description = "Question created successfully")
+	@PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
 	public ResponseEntity<Void> createQuestion(@RequestBody @Valid QuestionDto dto) throws Exception {
 		questionService.saveQuestion(dto);
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
