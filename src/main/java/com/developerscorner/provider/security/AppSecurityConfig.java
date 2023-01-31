@@ -16,47 +16,35 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 @Configuration
 public class AppSecurityConfig {
 
-   private final JwtAuthenticationFilter jwtAuthFilter;
-   private final AuthenticationProvider authenticationProvider;
-   
-   public AppSecurityConfig(JwtAuthenticationFilter jwtFilter, AuthenticationProvider authProvider) {
-	   this.jwtAuthFilter = jwtFilter;
-	   this.authenticationProvider = authProvider;
-   }
-   
-   @Bean
-   public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-     http
-	     .csrf()
-	     .disable()
-	     .cors(cors -> cors.configurationSource(corsConfigurationSource()))
-	     .authorizeRequests()
-	     .antMatchers("/auth/**", "/h2-console/**", 
-	    		 "/messages", "/secured-room/info?t=*",
-	    		 "/v3/api-docs/**",
-	    		 "/actuator/**",
-	    		 "/swagger-ui/**",
-	    		 "/secured-room/**")
-	     .permitAll()
-	     .anyRequest()
-	     .authenticated()
-	     .and()
-	     .sessionManagement()
-	     .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-	     .and()
-	     .authenticationProvider(authenticationProvider)
-	     .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+	private final JwtAuthenticationFilter jwtAuthFilter;
+	private final AuthenticationProvider authenticationProvider;
 
-     return http.build();
-   }
-   
-   @Bean
-   CorsConfigurationSource corsConfigurationSource() {
-   	CorsConfiguration configuration = new CorsConfiguration();
-   	configuration.setAllowedOrigins(Arrays.asList("http://localhost:8080"));
-   	configuration.setAllowedMethods(Arrays.asList("GET","POST", "PUT", "DELETE"));
-   	UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-   	source.registerCorsConfiguration("/**", configuration);
-   	return source;
-   }
+	public AppSecurityConfig(JwtAuthenticationFilter jwtFilter, AuthenticationProvider authProvider) {
+		this.jwtAuthFilter = jwtFilter;
+		this.authenticationProvider = authProvider;
+	}
+
+	@Bean
+	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+		http.headers().frameOptions().disable().and().csrf().disable()
+				.cors(cors -> cors.configurationSource(corsConfigurationSource())).authorizeRequests()
+				.antMatchers("/auth/**", "/h2-console/**", "/messages", "/secured-room/info?t=*", "/v3/api-docs/**",
+						"/actuator/**", "/swagger-ui/**", "/secured-room/**")
+				.permitAll().anyRequest().authenticated().and().sessionManagement()
+				.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
+				.authenticationProvider(authenticationProvider)
+				.addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+
+		return http.build();
+	}
+
+	@Bean
+	CorsConfigurationSource corsConfigurationSource() {
+		CorsConfiguration configuration = new CorsConfiguration();
+		configuration.setAllowedOrigins(Arrays.asList("http://localhost:8080"));
+		configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
+		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+		source.registerCorsConfiguration("/**", configuration);
+		return source;
+	}
 }
