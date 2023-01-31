@@ -33,7 +33,8 @@ public class UserServiceImple implements UserService {
 
 	public User findByEmail(String email) {
 		User user = userRepository.findByEmail(email);
-		if(user == null) new NotFoundException("User not found");
+		
+		if(user == null) throw new NotFoundException("User not found");
 		
 		return user;
 	}

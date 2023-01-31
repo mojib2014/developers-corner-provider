@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import com.developerscorner.provider.dto.AuthResponse;
 import com.developerscorner.provider.dto.UserLoginDto;
@@ -18,7 +17,6 @@ import com.developerscorner.provider.dto.UserRegistrationDto;
 import com.developerscorner.provider.service.AuthService;
 
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 
 @RestController

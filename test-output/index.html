@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\mojib.mohammad\AppData\Local\Temp\testng-eclipse-1265039112\testng-customsuite.xml</span>
+                    <span>C:\Users\mojib.mohammad\AppData\Local\Temp\testng-eclipse--238580920\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.developerscorner.provider.service.UserServiceTest" class="method navigator-link" hash-for-method="shouldThrowNotFoundExceptionIfUserByEmailNotExists">shouldThrowNotFoundExceptionIfUserByEmailNotExists</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -143,6 +129,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.developerscorner.provider.service.UserServiceTest" class="method navigator-link" hash-for-method="shouldThrowNotFoundExceptionIfUserByEmailNotExists">shouldThrowNotFoundExceptionIfUserByEmailNotExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.developerscorner.provider.service.UserServiceTest" class="method navigator-link" hash-for-method="shouldThrowNotFoundExceptionIfUserByIdNotExists">shouldThrowNotFoundExceptionIfUserByIdNotExists</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -163,50 +154,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.developerscorner.provider.service.UserServiceTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldThrowNotFoundExceptionIfUserByEmailNotExists">
-                  </a> <!-- shouldThrowNotFoundExceptionIfUserByEmailNotExists -->
-                  <span class="method-name">shouldThrowNotFoundExceptionIfUserByEmailNotExists</span>
-                  <div class="stack-trace">org.testng.TestException: 
-Method UserServiceTest.shouldThrowNotFoundExceptionIfUserByEmailNotExists()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@161aa04a] should have thrown an exception of type class com.developerscorner.provider.exception.NotFoundException
-	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
-	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:749)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:634)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -250,6 +197,13 @@ Method UserServiceTest.shouldThrowNotFoundExceptionIfUserByEmailNotExists()[pri:
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="shouldThrowNotFoundExceptionIfUserByEmailNotExists">
+                  </a> <!-- shouldThrowNotFoundExceptionIfUserByEmailNotExists -->
+                  <span class="method-name">shouldThrowNotFoundExceptionIfUserByEmailNotExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="shouldThrowNotFoundExceptionIfUserByIdNotExists">
                   </a> <!-- shouldThrowNotFoundExceptionIfUserByIdNotExists -->
                   <span class="method-name">shouldThrowNotFoundExceptionIfUserByIdNotExists</span>
@@ -267,7 +221,7 @@ Method UserServiceTest.shouldThrowNotFoundExceptionIfUserByEmailNotExists()[pri:
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mojib.mohammad\AppData\Local\Temp\testng-eclipse-1265039112\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\mojib.mohammad\AppData\Local\Temp\testng-eclipse--238580920\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -320,27 +274,27 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'shouldDeleteAUser')
 data.setCell(0, 2, 'com.developerscorner.provider.service.UserServiceTest')
-data.setCell(0, 3, 56);
+data.setCell(0, 3, 57);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'shouldSaveAUser')
 data.setCell(1, 2, 'com.developerscorner.provider.service.UserServiceTest')
-data.setCell(1, 3, 15);
+data.setCell(1, 3, 20);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'shouldUpdateAUser')
+data.setCell(2, 1, 'shouldFindUserByEmail')
 data.setCell(2, 2, 'com.developerscorner.provider.service.UserServiceTest')
 data.setCell(2, 3, 7);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'shouldFindUserByEmail')
+data.setCell(3, 1, 'shouldFindUserById')
 data.setCell(3, 2, 'com.developerscorner.provider.service.UserServiceTest')
-data.setCell(3, 3, 7);
+data.setCell(3, 3, 5);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'shouldFindUserById')
+data.setCell(4, 1, 'shouldUpdateAUser')
 data.setCell(4, 2, 'com.developerscorner.provider.service.UserServiceTest')
 data.setCell(4, 3, 4);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'shouldThrowNotFoundExceptionIfUserByEmailNotExists')
 data.setCell(5, 2, 'com.developerscorner.provider.service.UserServiceTest')
-data.setCell(5, 3, 3);
+data.setCell(5, 3, 2);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'shouldFindAllUsers')
 data.setCell(6, 2, 'com.developerscorner.provider.service.UserServiceTest')
@@ -353,7 +307,7 @@ window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 96 ms</span>
+              <span class="suite-total-time">Total running time: 99 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -386,113 +340,111 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">springTestContextPrepareTestInstance</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3428 ms</span>
+                <span class="method-start">2433 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldDeleteAUser())</span>
-                <span class="method-start">3465 ms</span>
+                <span class="method-start">2468 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldDeleteAUser</span>
-                <span class="method-start">3470 ms</span>
+                <span class="method-start">2472 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldDeleteAUser())</span>
-                <span class="method-start">3529 ms</span>
+                <span class="method-start">2532 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldFindAllUsers())</span>
-                <span class="method-start">3531 ms</span>
+                <span class="method-start">2536 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldFindAllUsers</span>
-                <span class="method-start">3532 ms</span>
+                <span class="method-start">2538 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldFindAllUsers())</span>
-                <span class="method-start">3535 ms</span>
+                <span class="method-start">2542 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldFindUserByEmail())</span>
-                <span class="method-start">3536 ms</span>
+                <span class="method-start">2543 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldFindUserByEmail</span>
-                <span class="method-start">3537 ms</span>
+                <span class="method-start">2546 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldFindUserByEmail())</span>
-                <span class="method-start">3545 ms</span>
+                <span class="method-start">2554 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldFindUserById())</span>
-                <span class="method-start">3546 ms</span>
+                <span class="method-start">2556 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldFindUserById</span>
-                <span class="method-start">3547 ms</span>
+                <span class="method-start">2557 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldFindUserById())</span>
-                <span class="method-start">3551 ms</span>
+                <span class="method-start">2563 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldSaveAUser())</span>
-                <span class="method-start">3552 ms</span>
+                <span class="method-start">2564 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldSaveAUser</span>
-                <span class="method-start">3553 ms</span>
+                <span class="method-start">2565 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldSaveAUser())</span>
-                <span class="method-start">3569 ms</span>
+                <span class="method-start">2586 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUser...)</span>
-                <span class="method-start">3570 ms</span>
+                <span class="method-start">2586 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">shouldThrowNotFoundExceptionIfUserByEmailNotExists</span>
-                <span class="method-start">3571 ms</span>
+                <span class="method-start">2587 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUser...)</span>
-                <span class="method-start">3576 ms</span>
+                <span class="method-start">2591 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUser...)</span>
-                <span class="method-start">3578 ms</span>
+                <span class="method-start">2592 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shouldThrowNotFoundExceptionIfUserByIdNotExists</span>
-                <span class="method-start">3578 ms</span>
+                <span class="method-start">2593 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUser...)</span>
-                <span class="method-start">3582 ms</span>
+                <span class="method-start">2598 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">shouldUpdateAUser</span>
-                <span class="method-start">3584 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldUpdateAUser())</span>
-                <span class="method-start">3584 ms</span>
+                <span class="method-start">2599 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shouldUpdateAUser</span>
+                <span class="method-start">2600 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.developerscorner.provider.service.UserServiceTest.shouldUpdateAUser())</span>
-                <span class="method-start">3592 ms</span>
+                <span class="method-start">2605 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">springTestContextAfterTestClass</span>
-                <span class="method-start">3593 ms</span>
+                <span class="method-start">2606 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
