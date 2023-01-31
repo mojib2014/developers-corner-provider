@@ -54,13 +54,21 @@ public class AppUserDataLoader implements ApplicationListener<ContextRefreshedEv
 	
 	@Transactional
 	void createQuestionForUser(User user) {
-		Question q = Question.builder()
+		Question q1 = Question.builder()
 				.user(user)
 				.createdAt(LocalDateTime.now()) 
 				.username("testuser")
 				.tags("Java")
 				.question("Java data types")
 				.build();
-		questionRepository.save(q);
+		Question q2 = Question.builder()
+				.user(user)
+				.createdAt(LocalDateTime.now()) 
+				.username("testuser")
+				.tags("Java")
+				.question("Java spring mvc")
+				.build();
+		questionRepository.save(q1);
+		questionRepository.save(q2);
 	}
 }
