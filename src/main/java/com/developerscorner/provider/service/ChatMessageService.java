@@ -16,8 +16,8 @@ public class ChatMessageService {
 	@Autowired
 	private ChatMessageRepository messageRepo;
 	
-	public void save(ChatMessage message) {
-		messageRepo.save(message);
+	public ChatMessage save(ChatMessage message) {
+		return messageRepo.saveAndFlush(message);
 	}
 	
 	public Long countNewMessages(Long senderId, Long receiverId) {
