@@ -32,7 +32,6 @@ import com.developerscorner.provider.model.User;
 import com.developerscorner.provider.service.AuthService;
 import com.developerscorner.provider.service.UserService;
 
-
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -40,89 +39,92 @@ public class UserController {
 	private final AuthService authService;
 	private final UserService userService;
 	private static Logger logger = LoggerFactory.getLogger(UserController.class);
-	
+
 	public UserController(AuthService authService, UserService userService) {
 		this.authService = authService;
 		this.userService = userService;
 	}
-	
+
 	@InitBinder
 	public void initBinder(WebDataBinder dataBinder) {
 		StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
 		dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
 	}
-	
-	//----------------- Register user ----------------------------
+
+	// ----------------- Register user ----------------------------
 	@PostMapping("/register")
 	public ResponseEntity<Void> register(@RequestBody @Valid UserRegistrationDto form) {
 		logger.info("Registering user {}", form);
 		userService.save(form);
 		return new ResponseEntity<Void>(HttpStatus.CREATED);
 	}
-	
-	//------------------- Login user --------------------------
+
+	// ------------------- Login user --------------------------
 	@PostMapping("/login")
 	@ResponseBody
 	public ModelAndView login(@Valid @ModelAttribute("loginForm") UserLoginDto form, BindingResult bindingResult) {
 		ModelAndView mv = new ModelAndView();
-		if(bindingResult.hasErrors()) {
+		if (bindingResult.hasErrors()) {
 			bindingResult
-			.getFieldErrors()
-			.stream()
-			.forEach(f -> mv.addObject("errors", f.getField() + ": " + f.getDefaultMessage()));
-			 mv.setViewName("loginForm");
+					.getFieldErrors()
+					.stream()
+					.forEach(f -> mv.addObject("errors", f.getField() + ": " + f.getDefaultMessage()));
+			mv.setViewName("loginForm");
 			return mv;
-		}else {
+		} else {
 			logger.info("Loggin in user {}", form);
 			AuthResponse authResponse = authService.authenticate(form);
-//			UserLoginDto newUser = new UserLoginDto(form.getEmail(), form.getPassword());
-			
+			// UserLoginDto newUser = new UserLoginDto(form.getEmail(), form.getPassword());
+
 			mv.setViewName("loginForm");
 			mv.addObject("user", authResponse);
-			
-			return mv;			
+
+			return mv;
 		}
-		
+
 	}
-	
-	//-------------------- Retrieve All Users ---------------------------------
+
+	// -------------------- Retrieve All Users ---------------------------------
 	@GetMapping
 	public ResponseEntity<List<User>> getAllUsers(Exception e) {
 		List<User> users = userService.findAll();
-		
+
 		return new ResponseEntity<List<User>>(users, HttpStatus.OK);
 	}
-	
-	//------------------------- Retrieve A User By Id-----------------------------
+
+	// ------------------------- Retrieve A User By Id-----------------------------
 	@GetMapping("/{id}")
 	public ResponseEntity<User> getUserById(@PathVariable(value = "id") Long id) {
 		User user = userService.findById(id);
-		
+
 		return new ResponseEntity<User>(user, HttpStatus.OK);
 	}
-	
-	//------------------------- Retrieve A User By Email -----------------------------
+
+	// ------------------------- Retrieve A User By Email
+	// -----------------------------
 	@GetMapping("/email/{email}")
-	public ResponseEntity<User> getUserByEmail(@PathVariable(value="email") String email, HttpServletRequest request) {
+	public ResponseEntity<User> getUserByEmail(@PathVariable(value = "email") String email,
+			HttpServletRequest request) {
 		System.out.println("/users/email -----------------------==========" + request.getHeader("Authorization"));
 		User user = userService.findByEmail(email);
-		
+
 		return new ResponseEntity<User>(user, HttpStatus.OK);
 	}
-	
-	//----------------------- Update a user by id -------------------
+
+	// ----------------------- Update a user by id -------------------
 	@PutMapping("/{id}")
-	public ResponseEntity<Void> updateUserById(@PathVariable(value = "id") Long id, @RequestBody @Valid UserRegistrationDto dto) {
+	public ResponseEntity<Void> updateUserById(@PathVariable(value = "id") Long id,
+			@RequestBody @Valid UserRegistrationDto dto) {
 		System.out.println("updating -------------" + dto.toString());
 		userService.update(id, dto);
 		return new ResponseEntity<>(HttpStatus.ACCEPTED);
 	}
-	
+
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Void> deleteUserById(@PathVariable(value = "id") Long id) {
 		userService.delete(id);
-		
+
 		return new ResponseEntity<Void>(HttpStatus.ACCEPTED);
 	}
-	
+
 }

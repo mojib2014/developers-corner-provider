@@ -25,42 +25,36 @@ public class AuthController {
 
 	private final AuthService authService;
 	private static Logger logger = LoggerFactory.getLogger(UserController.class);
-	
+
 	public AuthController(AuthService authService) {
 		this.authService = authService;
 	}
 
 	/**
 	 * Registers a user and returns a token in the response body
+	 * 
 	 * @param UserRegistrationDto
 	 * @return AuthResponse with JWT token
 	 */
 	@Operation(summary = "Register a user")
 	@ApiResponse(responseCode = "200", description = "User registered succefully")
-	@PostMapping(
-			value = "/register", 
-			consumes = {MediaType.APPLICATION_JSON_VALUE}, 
-			produces = {MediaType.APPLICATION_JSON_VALUE}
-			)
+	@PostMapping(value = "/register", consumes = { MediaType.APPLICATION_JSON_VALUE }, produces = {
+			MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<AuthResponse> register(@Valid @RequestBody UserRegistrationDto dto) {
 		logger.info("register contrroler {}", dto);
 		AuthResponse authResponse = authService.register(dto);
-	
+
 		return new ResponseEntity<AuthResponse>(authResponse, HttpStatus.OK);
 	}
 
 	@Operation(summary = "Logs in a user")
 	@ApiResponse(responseCode = "200", description = "User logged in succefully")
-	@PostMapping(
-			value = "/login", 
-			consumes = {MediaType.APPLICATION_JSON_VALUE}, 
-			produces = {MediaType.APPLICATION_JSON_VALUE}
-			)
+	@PostMapping(value = "/login", consumes = { MediaType.APPLICATION_JSON_VALUE }, produces = {
+			MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<AuthResponse> login(@Valid @RequestBody UserLoginDto dto) {
 		AuthResponse authResponse = authService.authenticate(dto);
-		
+
 		return new ResponseEntity<AuthResponse>(authResponse, HttpStatus.OK);
 	}
 
 }
-

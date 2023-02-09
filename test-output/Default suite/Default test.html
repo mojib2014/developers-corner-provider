@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>36/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>50/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 31 14:09:02 CST 2023</td>
+<td>Started on:</td><td>Thu Feb 09 09:17:11 CST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21461 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38725 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,152 +75,34 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldDeleteAQuestion()'><b>shouldDeleteAQuestion</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
+<td title='com.developerscorner.provider.service.UserServiceTest.shouldUpdateAUser()'><b>shouldUpdateAUser</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
 <td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldUpdateAQuestion()'><b>shouldUpdateAQuestion</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
-<td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageById()'><b>shouldFindChatMessageById</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
-<td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.ChatMessageServiceTest@7b1e5e55</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionById()'><b>shouldFindQuestionById</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
-<td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldCountNewMessages()'><b>shouldCountNewMessages</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
-<td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.ChatMessageServiceTest@7b1e5e55</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageBySender()'><b>shouldFindChatMessageBySender</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
-<td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.ChatMessageServiceTest@7b1e5e55</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.UserServiceTest.shouldFindUserById()'><b>shouldFindUserById</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
-<td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.UserServiceTest@46f902e0</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByIdNotExists()'><b>shouldThrowNotFoundExceptionIfUserByIdNotExists</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
-<td><div><pre>com.developerscorner.provider.exception.NotFoundException: User not found
-	at com.developerscorner.provider.service.UserServiceImple.lambda$0(UserServiceImple.java:31)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at com.developerscorner.provider.service.UserServiceImple.findById(UserServiceImple.java:31)
-	at com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByIdNotExists(UserServiceTest.java:147)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
-	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace303790741", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace303790741'><pre>com.developerscorner.provider.exception.NotFoundException: User not found
-	at com.developerscorner.provider.service.UserServiceImple.lambda$0(UserServiceImple.java:31)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at com.developerscorner.provider.service.UserServiceImple.findById(UserServiceImple.java:31)
-	at com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByIdNotExists(UserServiceTest.java:147)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
-	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.UserServiceTest@46f902e0</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.UserServiceTest.shouldSaveAUser()'><b>shouldSaveAUser</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
-<td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.UserServiceTest@46f902e0</td></tr>
+<td>com.developerscorner.provider.service.UserServiceTest@5ef0d29e</td></tr>
 <tr>
 <td title='com.developerscorner.provider.service.UserServiceTest.shouldFindUserByEmail()'><b>shouldFindUserByEmail</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
 <td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.UserServiceTest@46f902e0</td></tr>
+<td>com.developerscorner.provider.service.UserServiceTest@5ef0d29e</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.AuthServiceTest.shouldRegisterAUser()'><b>shouldRegisterAUser</b><br>Test class: com.developerscorner.provider.service.AuthServiceTest</td>
+<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldFindAllQuestions()'><b>shouldFindAllQuestions</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
 <td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.AuthServiceTest@3b42121d</td></tr>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionByUsername()'><b>shouldFindQuestionByUsername</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
+<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldSaveAQuestion()'><b>shouldSaveAQuestion</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
 <td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldSaveChatMessage()'><b>shouldSaveChatMessage</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
+<td title='com.developerscorner.provider.uiTests.HomePageTest.shouldCreateQuestion()'><b>shouldCreateQuestion</b><br>Test class: com.developerscorner.provider.uiTests.HomePageTest</td>
 <td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.ChatMessageServiceTest@7b1e5e55</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.UserServiceTest.shouldFindAllUsers()'><b>shouldFindAllUsers</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
-<td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.UserServiceTest@46f902e0</td></tr>
+<td>1</td>
+<td>com.developerscorner.provider.uiTests.HomePageTest@33617539</td></tr>
 <tr>
 <td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByReceiverNotExists()'><b>shouldThrowNotFoundExceptionIfByReceiverNotExists</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
 <td><div><pre>com.developerscorner.provider.exception.NotFoundException: Message not found
-	at com.developerscorner.provider.service.ChatMessageService.lambda$3(ChatMessageService.java:59)
+	at com.developerscorner.provider.service.ChatMessageService.lambda$findMessageByReciever$3(ChatMessageService.java:59)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.developerscorner.provider.service.ChatMessageService.findMessageByReciever(ChatMessageService.java:59)
 	at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByReceiverNotExists(ChatMessageServiceTest.java:203)
@@ -255,9 +137,9 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1769399919", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1769399919'><pre>com.developerscorner.provider.exception.NotFoundException: Message not found
-	at com.developerscorner.provider.service.ChatMessageService.lambda$3(ChatMessageService.java:59)
+</pre></div><a href='#' onClick='toggleBox("stack-trace331881413", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace331881413'><pre>com.developerscorner.provider.exception.NotFoundException: Message not found
+	at com.developerscorner.provider.service.ChatMessageService.lambda$findMessageByReciever$3(ChatMessageService.java:59)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.developerscorner.provider.service.ChatMessageService.findMessageByReciever(ChatMessageService.java:59)
 	at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByReceiverNotExists(ChatMessageServiceTest.java:203)
@@ -294,7 +176,185 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.ChatMessageServiceTest@7b1e5e55</td></tr>
+<td>com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessagesBySenderAndReceiver()'><b>shouldFindChatMessagesBySenderAndReceiver</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9</td></tr>
+<tr>
+<td title='com.developerscorner.provider.uiTests.QuestionsPageTest.shouldGetQuestionsPage()'><b>shouldGetQuestionsPage</b><br>Test class: com.developerscorner.provider.uiTests.QuestionsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists()'><b>shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
+<td><div><pre>com.developerscorner.provider.exception.NotFoundException: User not found
+	at com.developerscorner.provider.service.UserServiceImple.lambda$findById$0(UserServiceImple.java:31)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.developerscorner.provider.service.UserServiceImple.findById(UserServiceImple.java:31)
+	at com.developerscorner.provider.service.QuestionService.saveQuestion(QuestionService.java:54)
+	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists(QuestionServiceTest.java:215)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace461339502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace461339502'><pre>com.developerscorner.provider.exception.NotFoundException: User not found
+	at com.developerscorner.provider.service.UserServiceImple.lambda$findById$0(UserServiceImple.java:31)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.developerscorner.provider.service.UserServiceImple.findById(UserServiceImple.java:31)
+	at com.developerscorner.provider.service.QuestionService.saveQuestion(QuestionService.java:54)
+	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists(QuestionServiceTest.java:215)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
+<tr>
+<td title='com.developerscorner.provider.uiTests.QuestionsPageTest.shouldDisplayFieldRequiredIfOneOfTheFieldsIsBlank()'><b>shouldDisplayFieldRequiredIfOneOfTheFieldsIsBlank</b><br>Test class: com.developerscorner.provider.uiTests.QuestionsPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionByUsername()'><b>shouldFindQuestionByUsername</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByIdNotExists()'><b>shouldThrowNotFoundExceptionIfUserByIdNotExists</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
+<td><div><pre>com.developerscorner.provider.exception.NotFoundException: User not found
+	at com.developerscorner.provider.service.UserServiceImple.lambda$findById$0(UserServiceImple.java:31)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.developerscorner.provider.service.UserServiceImple.findById(UserServiceImple.java:31)
+	at com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByIdNotExists(UserServiceTest.java:147)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace607504046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace607504046'><pre>com.developerscorner.provider.exception.NotFoundException: User not found
+	at com.developerscorner.provider.service.UserServiceImple.lambda$findById$0(UserServiceImple.java:31)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.developerscorner.provider.service.UserServiceImple.findById(UserServiceImple.java:31)
+	at com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByIdNotExists(UserServiceTest.java:147)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.UserServiceTest@5ef0d29e</td></tr>
 <tr>
 <td title='com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUserIdNotExists()'><b>shouldThrowNotFoundExceptionIfQuestionByUserIdNotExists</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
 <td><div><pre>com.developerscorner.provider.exception.NotFoundException: There are no questions.
@@ -331,8 +391,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1713416186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1713416186'><pre>com.developerscorner.provider.exception.NotFoundException: There are no questions.
+</pre></div><a href='#' onClick='toggleBox("stack-trace1090625437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1090625437'><pre>com.developerscorner.provider.exception.NotFoundException: There are no questions.
 	at com.developerscorner.provider.service.QuestionService.findByUserId(QuestionService.java:47)
 	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUserIdNotExists(QuestionServiceTest.java:200)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -368,255 +428,21 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists()'><b>shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
-<td><div><pre>com.developerscorner.provider.exception.NotFoundException: Question not found
-	at com.developerscorner.provider.service.QuestionService.lambda$1(QuestionService.java:41)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at com.developerscorner.provider.service.QuestionService.findByUsername(QuestionService.java:41)
-	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists(QuestionServiceTest.java:192)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
-	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1883330010", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1883330010'><pre>com.developerscorner.provider.exception.NotFoundException: Question not found
-	at com.developerscorner.provider.service.QuestionService.lambda$1(QuestionService.java:41)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at com.developerscorner.provider.service.QuestionService.findByUsername(QuestionService.java:41)
-	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists(QuestionServiceTest.java:192)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
-	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessagesBySenderAndReceiver()'><b>shouldFindChatMessagesBySenderAndReceiver</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
-<td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.ChatMessageServiceTest@7b1e5e55</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.AuthServiceTest.shouldThrowConflictExceptionIfUserExists()'><b>shouldThrowConflictExceptionIfUserExists</b><br>Test class: com.developerscorner.provider.service.AuthServiceTest</td>
-<td><div><pre>com.developerscorner.provider.exception.ConflictException: User already exists with email first.name@email.com
-	at com.developerscorner.provider.service.AuthServiceImple.register(AuthServiceImple.java:38)
-	at com.developerscorner.provider.service.AuthServiceTest.shouldThrowConflictExceptionIfUserExists(AuthServiceTest.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
-	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace647623352", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace647623352'><pre>com.developerscorner.provider.exception.ConflictException: User already exists with email first.name@email.com
-	at com.developerscorner.provider.service.AuthServiceImple.register(AuthServiceImple.java:38)
-	at com.developerscorner.provider.service.AuthServiceTest.shouldThrowConflictExceptionIfUserExists(AuthServiceTest.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
-	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.AuthServiceTest@3b42121d</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.AuthServiceTest.shouldThrowUsernameNotFoundExceptionIfUserNotExists()'><b>shouldThrowUsernameNotFoundExceptionIfUserNotExists</b><br>Test class: com.developerscorner.provider.service.AuthServiceTest</td>
-<td><div><pre>org.springframework.security.core.userdetails.UsernameNotFoundException
-</pre></div><a href='#' onClick='toggleBox("stack-trace1370341580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1370341580'><pre>org.springframework.security.core.userdetails.UsernameNotFoundException
-</pre></div></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.AuthServiceTest@3b42121d</td></tr>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
 <tr>
 <td title='com.developerscorner.provider.ProviderApplicationTests.contextLoads()'><b>contextLoads</b><br>Test class: com.developerscorner.provider.ProviderApplicationTests</td>
 <td></td>
 <td>0</td>
-<td>com.developerscorner.provider.ProviderApplicationTests@1e84f3c8</td></tr>
+<td>com.developerscorner.provider.ProviderApplicationTests@54361a9</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfNoQuestionsExists()'><b>shouldThrowNotFoundExceptionIfNoQuestionsExists</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
-<td><div><pre>com.developerscorner.provider.exception.NotFoundException: There are no questions.
-	at com.developerscorner.provider.service.QuestionService.findAllQuestions(QuestionService.java:30)
-	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfNoQuestionsExists(QuestionServiceTest.java:176)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
-	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1663233344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1663233344'><pre>com.developerscorner.provider.exception.NotFoundException: There are no questions.
-	at com.developerscorner.provider.service.QuestionService.findAllQuestions(QuestionService.java:30)
-	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfNoQuestionsExists(QuestionServiceTest.java:176)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
-	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='com.developerscorner.provider.uiTests.ProfilePageTest.shouldDisplayFieldRequiredIfOnceOfTheFieldsIsBlank()'><b>shouldDisplayFieldRequiredIfOnceOfTheFieldsIsBlank</b><br>Test class: com.developerscorner.provider.uiTests.ProfilePageTest</td>
+<td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
+<td>com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359</td></tr>
 <tr>
 <td title='com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByIdNotExists()'><b>shouldThrowNotFoundExceptionIfQuestionByIdNotExists</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
 <td><div><pre>com.developerscorner.provider.exception.NotFoundException: Question not found
-	at com.developerscorner.provider.service.QuestionService.lambda$0(QuestionService.java:36)
+	at com.developerscorner.provider.service.QuestionService.lambda$findById$0(QuestionService.java:36)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.developerscorner.provider.service.QuestionService.findById(QuestionService.java:36)
 	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByIdNotExists(QuestionServiceTest.java:184)
@@ -651,9 +477,9 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1001974170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1001974170'><pre>com.developerscorner.provider.exception.NotFoundException: Question not found
-	at com.developerscorner.provider.service.QuestionService.lambda$0(QuestionService.java:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace63370083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace63370083'><pre>com.developerscorner.provider.exception.NotFoundException: Question not found
+	at com.developerscorner.provider.service.QuestionService.lambda$findById$0(QuestionService.java:36)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
 	at com.developerscorner.provider.service.QuestionService.findById(QuestionService.java:36)
 	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByIdNotExists(QuestionServiceTest.java:184)
@@ -690,7 +516,32 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageBySender()'><b>shouldFindChatMessageBySender</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldSaveChatMessage()'><b>shouldSaveChatMessage</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9</td></tr>
+<tr>
+<td title='com.developerscorner.provider.uiTests.QuestionsPageTest.shouldDeleteAQuestion()'><b>shouldDeleteAQuestion</b><br>Test class: com.developerscorner.provider.uiTests.QuestionsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99</td></tr>
+<tr>
+<td title='com.developerscorner.provider.uiTests.QuestionsPageTest.shouldCreateQuestion()'><b>shouldCreateQuestion</b><br>Test class: com.developerscorner.provider.uiTests.QuestionsPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.UserServiceTest.shouldDeleteAUser()'><b>shouldDeleteAUser</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.UserServiceTest@5ef0d29e</td></tr>
 <tr>
 <td title='com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByEmailNotExists()'><b>shouldThrowNotFoundExceptionIfUserByEmailNotExists</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
 <td><div><pre>com.developerscorner.provider.exception.NotFoundException: User not found
@@ -727,8 +578,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace600820203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace600820203'><pre>com.developerscorner.provider.exception.NotFoundException: User not found
+</pre></div><a href='#' onClick='toggleBox("stack-trace1860296143", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1860296143'><pre>com.developerscorner.provider.exception.NotFoundException: User not found
 	at com.developerscorner.provider.service.UserServiceImple.findByEmail(UserServiceImple.java:37)
 	at com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByEmailNotExists(UserServiceTest.java:156)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -764,94 +615,19 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.UserServiceTest@46f902e0</td></tr>
+<td>com.developerscorner.provider.service.UserServiceTest@5ef0d29e</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists()'><b>shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
-<td><div><pre>com.developerscorner.provider.exception.NotFoundException: User not found
-	at com.developerscorner.provider.service.UserServiceImple.lambda$0(UserServiceImple.java:31)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at com.developerscorner.provider.service.UserServiceImple.findById(UserServiceImple.java:31)
-	at com.developerscorner.provider.service.QuestionService.saveQuestion(QuestionService.java:54)
-	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists(QuestionServiceTest.java:215)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
-	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1123454802", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1123454802'><pre>com.developerscorner.provider.exception.NotFoundException: User not found
-	at com.developerscorner.provider.service.UserServiceImple.lambda$0(UserServiceImple.java:31)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at com.developerscorner.provider.service.UserServiceImple.findById(UserServiceImple.java:31)
-	at com.developerscorner.provider.service.QuestionService.saveQuestion(QuestionService.java:54)
-	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists(QuestionServiceTest.java:215)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
-	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='com.developerscorner.provider.uiTests.ProfilePageTest.shouldGetProfilePage()'><b>shouldGetProfilePage</b><br>Test class: com.developerscorner.provider.uiTests.ProfilePageTest</td>
+<td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
+<td>com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfBySenderNotExists()'><b>shouldThrowNotFoundExceptionIfBySenderNotExists</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
+<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByIdNotExists()'><b>shouldThrowNotFoundExceptionIfByIdNotExists</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
 <td><div><pre>com.developerscorner.provider.exception.NotFoundException: Message not found
-	at com.developerscorner.provider.service.ChatMessageService.lambda$2(ChatMessageService.java:55)
+	at com.developerscorner.provider.service.ChatMessageService.lambda$findMessageById$1(ChatMessageService.java:51)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at com.developerscorner.provider.service.ChatMessageService.findMessageBySender(ChatMessageService.java:55)
-	at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfBySenderNotExists(ChatMessageServiceTest.java:194)
+	at com.developerscorner.provider.service.ChatMessageService.findMessageById(ChatMessageService.java:51)
+	at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByIdNotExists(ChatMessageServiceTest.java:185)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -883,12 +659,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1547713771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1547713771'><pre>com.developerscorner.provider.exception.NotFoundException: Message not found
-	at com.developerscorner.provider.service.ChatMessageService.lambda$2(ChatMessageService.java:55)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1313534832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1313534832'><pre>com.developerscorner.provider.exception.NotFoundException: Message not found
+	at com.developerscorner.provider.service.ChatMessageService.lambda$findMessageById$1(ChatMessageService.java:51)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at com.developerscorner.provider.service.ChatMessageService.findMessageBySender(ChatMessageService.java:55)
-	at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfBySenderNotExists(ChatMessageServiceTest.java:194)
+	at com.developerscorner.provider.service.ChatMessageService.findMessageById(ChatMessageService.java:51)
+	at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByIdNotExists(ChatMessageServiceTest.java:185)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -922,54 +698,136 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.ChatMessageServiceTest@7b1e5e55</td></tr>
+<td>com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessages()'><b>shouldFindChatMessages</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
+<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldUpdateAQuestion()'><b>shouldUpdateAQuestion</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
 <td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.ChatMessageServiceTest@7b1e5e55</td></tr>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionByUserId()'><b>shouldFindQuestionByUserId</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
+<td title='com.developerscorner.provider.uiTests.QuestionsPageTest.shouldEditAQuestion()'><b>shouldEditAQuestion</b><br>Test class: com.developerscorner.provider.uiTests.QuestionsPageTest</td>
 <td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
+<td>1</td>
+<td>com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldFindAllQuestions()'><b>shouldFindAllQuestions</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
-<td></td>
+<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfNoQuestionsExists()'><b>shouldThrowNotFoundExceptionIfNoQuestionsExists</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
+<td><div><pre>com.developerscorner.provider.exception.NotFoundException: There are no questions.
+	at com.developerscorner.provider.service.QuestionService.findAllQuestions(QuestionService.java:30)
+	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfNoQuestionsExists(QuestionServiceTest.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1313142146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1313142146'><pre>com.developerscorner.provider.exception.NotFoundException: There are no questions.
+	at com.developerscorner.provider.service.QuestionService.findAllQuestions(QuestionService.java:30)
+	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfNoQuestionsExists(QuestionServiceTest.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
-<tr>
-<td title='com.developerscorner.provider.service.UserServiceTest.shouldDeleteAUser()'><b>shouldDeleteAUser</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
-<td></td>
-<td>0</td>
-<td>com.developerscorner.provider.service.UserServiceTest@46f902e0</td></tr>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
 <tr>
 <td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldUpdateStatuses()'><b>shouldUpdateStatuses</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
 <td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.ChatMessageServiceTest@7b1e5e55</td></tr>
+<td>com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageByReceiver()'><b>shouldFindChatMessageByReceiver</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
+<td title='com.developerscorner.provider.service.UserServiceTest.shouldSaveAUser()'><b>shouldSaveAUser</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
 <td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.ChatMessageServiceTest@7b1e5e55</td></tr>
+<td>com.developerscorner.provider.service.UserServiceTest@5ef0d29e</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.AuthServiceTest.shouldAuthenticateAUser()'><b>shouldAuthenticateAUser</b><br>Test class: com.developerscorner.provider.service.AuthServiceTest</td>
+<td title='com.developerscorner.provider.uiTests.RegisterPageTest.shouldDisplayFieldIsRequiredIfOneOfTheFieldIsBlank()'><b>shouldDisplayFieldIsRequiredIfOneOfTheFieldIsBlank</b><br>Test class: com.developerscorner.provider.uiTests.RegisterPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.developerscorner.provider.uiTests.RegisterPageTest@2c177f9e</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessages()'><b>shouldFindChatMessages</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
 <td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.AuthServiceTest@3b42121d</td></tr>
+<td>com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldSaveAQuestion()'><b>shouldSaveAQuestion</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
+<td title='com.developerscorner.provider.service.AuthServiceTest.shouldThrowUsernameNotFoundExceptionIfUserNotExists()'><b>shouldThrowUsernameNotFoundExceptionIfUserNotExists</b><br>Test class: com.developerscorner.provider.service.AuthServiceTest</td>
+<td><div><pre>org.springframework.security.core.userdetails.UsernameNotFoundException
+</pre></div><a href='#' onClick='toggleBox("stack-trace3804010", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3804010'><pre>org.springframework.security.core.userdetails.UsernameNotFoundException
+</pre></div></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.AuthServiceTest@51e8e6e6</td></tr>
+<tr>
+<td title='com.developerscorner.provider.uiTests.ProfilePageTest.shouldEditProfile()'><b>shouldEditProfile</b><br>Test class: com.developerscorner.provider.uiTests.ProfilePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.AuthServiceTest.shouldRegisterAUser()'><b>shouldRegisterAUser</b><br>Test class: com.developerscorner.provider.service.AuthServiceTest</td>
 <td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.QuestionServiceTest@626c19cf</td></tr>
+<td>com.developerscorner.provider.service.AuthServiceTest@51e8e6e6</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByIdNotExists()'><b>shouldThrowNotFoundExceptionIfByIdNotExists</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
+<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfBySenderNotExists()'><b>shouldThrowNotFoundExceptionIfBySenderNotExists</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
 <td><div><pre>com.developerscorner.provider.exception.NotFoundException: Message not found
-	at com.developerscorner.provider.service.ChatMessageService.lambda$1(ChatMessageService.java:51)
+	at com.developerscorner.provider.service.ChatMessageService.lambda$findMessageBySender$2(ChatMessageService.java:55)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at com.developerscorner.provider.service.ChatMessageService.findMessageById(ChatMessageService.java:51)
-	at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByIdNotExists(ChatMessageServiceTest.java:185)
+	at com.developerscorner.provider.service.ChatMessageService.findMessageBySender(ChatMessageService.java:55)
+	at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfBySenderNotExists(ChatMessageServiceTest.java:194)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1001,12 +859,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1477459884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1477459884'><pre>com.developerscorner.provider.exception.NotFoundException: Message not found
-	at com.developerscorner.provider.service.ChatMessageService.lambda$1(ChatMessageService.java:51)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1410897862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1410897862'><pre>com.developerscorner.provider.exception.NotFoundException: Message not found
+	at com.developerscorner.provider.service.ChatMessageService.lambda$findMessageBySender$2(ChatMessageService.java:55)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at com.developerscorner.provider.service.ChatMessageService.findMessageById(ChatMessageService.java:51)
-	at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByIdNotExists(ChatMessageServiceTest.java:185)
+	at com.developerscorner.provider.service.ChatMessageService.findMessageBySender(ChatMessageService.java:55)
+	at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfBySenderNotExists(ChatMessageServiceTest.java:194)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1040,12 +898,224 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.ChatMessageServiceTest@7b1e5e55</td></tr>
+<td>com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9</td></tr>
 <tr>
-<td title='com.developerscorner.provider.service.UserServiceTest.shouldUpdateAUser()'><b>shouldUpdateAUser</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
+<td title='com.developerscorner.provider.uiTests.HomePageTest.shoulGetHomePage()'><b>shoulGetHomePage</b><br>Test class: com.developerscorner.provider.uiTests.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.developerscorner.provider.service.UserServiceTest@46f902e0</td></tr>
+<td>com.developerscorner.provider.uiTests.HomePageTest@33617539</td></tr>
+<tr>
+<td title='com.developerscorner.provider.uiTests.RegisterPageTest.shouldRegisterAUser()'><b>shouldRegisterAUser</b><br>Test class: com.developerscorner.provider.uiTests.RegisterPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.uiTests.RegisterPageTest@2c177f9e</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.UserServiceTest.shouldFindAllUsers()'><b>shouldFindAllUsers</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.UserServiceTest@5ef0d29e</td></tr>
+<tr>
+<td title='com.developerscorner.provider.uiTests.HomePageTest.shouldDisplayFieldIsRequiredIfUsernameNotFilled()'><b>shouldDisplayFieldIsRequiredIfUsernameNotFilled</b><br>Test class: com.developerscorner.provider.uiTests.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.developerscorner.provider.uiTests.HomePageTest@33617539</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.AuthServiceTest.shouldThrowConflictExceptionIfUserExists()'><b>shouldThrowConflictExceptionIfUserExists</b><br>Test class: com.developerscorner.provider.service.AuthServiceTest</td>
+<td><div><pre>com.developerscorner.provider.exception.ConflictException: User already exists with email first.name@email.com
+	at com.developerscorner.provider.service.AuthServiceImple.register(AuthServiceImple.java:38)
+	at com.developerscorner.provider.service.AuthServiceTest.shouldThrowConflictExceptionIfUserExists(AuthServiceTest.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace542475071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace542475071'><pre>com.developerscorner.provider.exception.ConflictException: User already exists with email first.name@email.com
+	at com.developerscorner.provider.service.AuthServiceImple.register(AuthServiceImple.java:38)
+	at com.developerscorner.provider.service.AuthServiceTest.shouldThrowConflictExceptionIfUserExists(AuthServiceTest.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.AuthServiceTest@51e8e6e6</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists()'><b>shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
+<td><div><pre>com.developerscorner.provider.exception.NotFoundException: Question not found
+	at com.developerscorner.provider.service.QuestionService.lambda$findByUsername$1(QuestionService.java:41)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.developerscorner.provider.service.QuestionService.findByUsername(QuestionService.java:41)
+	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists(QuestionServiceTest.java:192)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace813301911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace813301911'><pre>com.developerscorner.provider.exception.NotFoundException: Question not found
+	at com.developerscorner.provider.service.QuestionService.lambda$findByUsername$1(QuestionService.java:41)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.developerscorner.provider.service.QuestionService.findByUsername(QuestionService.java:41)
+	at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists(QuestionServiceTest.java:192)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionByUserId()'><b>shouldFindQuestionByUserId</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.AuthServiceTest.shouldAuthenticateAUser()'><b>shouldAuthenticateAUser</b><br>Test class: com.developerscorner.provider.service.AuthServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.AuthServiceTest@51e8e6e6</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldCountNewMessages()'><b>shouldCountNewMessages</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.UserServiceTest.shouldFindUserById()'><b>shouldFindUserById</b><br>Test class: com.developerscorner.provider.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.UserServiceTest@5ef0d29e</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldDeleteAQuestion()'><b>shouldDeleteAQuestion</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionById()'><b>shouldFindQuestionById</b><br>Test class: com.developerscorner.provider.service.QuestionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.QuestionServiceTest@47874b25</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageById()'><b>shouldFindChatMessageById</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9</td></tr>
+<tr>
+<td title='com.developerscorner.provider.uiTests.ProfilePageTest.shouldCheckCurrentUserExists()'><b>shouldCheckCurrentUserExists</b><br>Test class: com.developerscorner.provider.uiTests.ProfilePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359</td></tr>
+<tr>
+<td title='com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageByReceiver()'><b>shouldFindChatMessageByReceiver</b><br>Test class: com.developerscorner.provider.service.ChatMessageServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9</td></tr>
 </table><p>
 </body>
 </html>

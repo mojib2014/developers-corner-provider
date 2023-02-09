@@ -96,7 +96,7 @@ class ChatMessageServiceTest extends AbstractTestNGSpringContextTests {
 	
 	@Test
 	void shouldSaveChatMessage() {
-		when(chatMessageRepo.save(any(ChatMessage.class))).thenReturn(null);
+		when(chatMessageRepo.saveAndFlush(any(ChatMessage.class))).thenReturn(message);
 		
 		ChatMessage newMessage = ChatMessage.builder()
 				.sender("sender")
@@ -106,7 +106,7 @@ class ChatMessageServiceTest extends AbstractTestNGSpringContextTests {
 		
 		chatMessageService.save(newMessage);
 		
-		verify(chatMessageRepo).save(newMessage);
+		verify(chatMessageRepo).saveAndFlush(newMessage);
 	}
 	
 	@Test
