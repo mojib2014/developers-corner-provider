@@ -34,11 +34,10 @@ public class SeleniumConfig {
 		System.out.println("in @beforeMethodClass");
 		SeleniumConfig.driver = BrowserFactory.getDriver("chrome");
 
-		SeleniumConfig.driver.get("http://localhost:4200/login"); // ('#!/login') cause of angularJs routing with spring
-																	// mvc.
+		SeleniumConfig.driver.get("http://localhost:4200/login");
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript(String.format("window.localStorage.removeItem('token')"));
+		js.executeScript(String.format("window.localStorage.removeItem('isLoggedIn')"));
 
 		LoginForm form = PageFactory.initElements(driver, LoginForm.class);
 

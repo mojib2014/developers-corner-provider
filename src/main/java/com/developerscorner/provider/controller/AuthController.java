@@ -1,5 +1,6 @@
 package com.developerscorner.provider.controller;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.developerscorner.provider.dto.AuthResponse;
 import com.developerscorner.provider.dto.UserLoginDto;
 import com.developerscorner.provider.dto.UserRegistrationDto;
@@ -40,10 +42,12 @@ public class AuthController {
 	@ApiResponse(responseCode = "200", description = "User registered succefully")
 	@PostMapping(value = "/register", consumes = { MediaType.APPLICATION_JSON_VALUE }, produces = {
 			MediaType.APPLICATION_JSON_VALUE })
-	public ResponseEntity<AuthResponse> register(@Valid @RequestBody UserRegistrationDto dto) {
+	public ResponseEntity<AuthResponse> register(@Valid @RequestBody UserRegistrationDto dto, HttpServletResponse res) {
 		logger.info("register contrroler {}", dto);
 		AuthResponse authResponse = authService.register(dto);
 
+		res.setHeader("Set-Cookie",
+				String.format("jwt=%s;HttpOnly;Secure;SameSite=None;Path=/;Max-Age=36000;", authResponse.getToken()));
 		return new ResponseEntity<AuthResponse>(authResponse, HttpStatus.OK);
 	}
 
@@ -51,8 +55,11 @@ public class AuthController {
 	@ApiResponse(responseCode = "200", description = "User logged in succefully")
 	@PostMapping(value = "/login", consumes = { MediaType.APPLICATION_JSON_VALUE }, produces = {
 			MediaType.APPLICATION_JSON_VALUE })
-	public ResponseEntity<AuthResponse> login(@Valid @RequestBody UserLoginDto dto) {
+	public ResponseEntity<AuthResponse> login(@Valid @RequestBody UserLoginDto dto, HttpServletResponse res) {
 		AuthResponse authResponse = authService.authenticate(dto);
+
+		res.setHeader("Set-Cookie",
+				String.format("jwt=%s;HttpOnly;Secure;SameSite=None;Path=/;Max-Age=36000;", authResponse.getToken()));
 
 		return new ResponseEntity<AuthResponse>(authResponse, HttpStatus.OK);
 	}

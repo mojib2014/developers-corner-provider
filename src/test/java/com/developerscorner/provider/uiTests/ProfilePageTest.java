@@ -44,7 +44,7 @@ public class ProfilePageTest extends SeleniumConfig {
 
 		form.openModalBtn.click();
 
-		assertEquals("Profile update", form.modalTitle.getText());
+		assertEquals("Profile Update", form.modalTitle.getText());
 		form.clear();
 		form.fillForm("updated first", "updated last", "updated nick name", "testuser@email.com", "123456");
 		form.submit();

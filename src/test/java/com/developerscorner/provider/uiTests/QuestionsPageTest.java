@@ -21,14 +21,14 @@ public class QuestionsPageTest extends SeleniumConfig {
 	/**
 	 * Positive tests
 	 */
-	@Test
+	@Test(priority = 1)
 	void shouldGetQuestionsPage() {
 		driver.navigate().to(baseUrl);
 
 		QuestionsPageForm form = PageFactory.initElements(driver, QuestionsPageForm.class);
 
 		assertEquals("Your Questions", form.title.getText());
-		assertEquals(2, form.list.size());
+		assertEquals(4, form.list.size());
 	}
 
 	@Test(priority = -1)
@@ -47,7 +47,7 @@ public class QuestionsPageTest extends SeleniumConfig {
 		assertTrue(form.questionFormTitle.isDisplayed());
 	}
 
-	@Test
+	@Test(priority = 2)
 	void shouldEditAQuestion() {
 		driver.get(baseUrl);
 		QuestionsPageForm form = PageFactory.initElements(driver, QuestionsPageForm.class);
@@ -64,20 +64,20 @@ public class QuestionsPageTest extends SeleniumConfig {
 
 	}
 
-	@Test
+	@Test(priority = 3)
 	void shouldDeleteAQuestion() {
 		driver.navigate().to(baseUrl);
 		QuestionsPageForm form = PageFactory.initElements(driver, QuestionsPageForm.class);
 
 		form.removeBtn.click();
 
-		assertEquals(2, form.list.size());
+		assertEquals(3, form.list.size());
 	}
 
 	/**
 	 * Negative tests
 	 */
-	@Test
+	@Test(priority = 4)
 	void shouldDisplayFieldRequiredIfOneOfTheFieldsIsBlank() {
 		driver.get(baseUrl);
 		QuestionsPageForm form = PageFactory.initElements(driver, QuestionsPageForm.class);

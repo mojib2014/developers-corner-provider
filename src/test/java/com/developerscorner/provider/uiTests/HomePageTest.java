@@ -28,7 +28,7 @@ public class HomePageTest extends SeleniumConfig {
 		assertEquals("Welcome to Developers Corner", form.title.getText());
 	}
 
-	@Test(priority = 1)
+	@Test(priority = -1)
 	void shouldCreateQuestion() {
 		driver.get(baseUrl);
 

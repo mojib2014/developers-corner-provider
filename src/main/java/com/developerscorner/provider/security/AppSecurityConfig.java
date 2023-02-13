@@ -21,11 +21,17 @@ public class AppSecurityConfig {
 
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-		http.csrf().disable()
+		http
+				.csrf().disable()
 				.authorizeRequests()
 				.antMatchers("/auth/**", "/h2-console/**", "/ws/**", "/v3/api-docs/**",
-						"/actuator/**", "/swagger-ui/**")
+						"/actuator/**", "/swagger-ui/**", "/users/logout")
 				.permitAll().anyRequest().authenticated().and().sessionManagement()
+				.and()
+				.logout()
+				.logoutUrl("/users/logout")
+				.invalidateHttpSession(true)
+				.deleteCookies("JSESSIONID", "jwt")
 				.and()
 				.authenticationProvider(authenticationProvider)
 				.addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);

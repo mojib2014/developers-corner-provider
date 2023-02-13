@@ -27,7 +27,7 @@ import com.developerscorner.provider.model.User;
 import com.developerscorner.provider.repository.UserRepository;
 
 @ActiveProfiles("test")
-@SpringBootTest(classes = {AuthService.class, AuthServiceImple.class, ProviderMocksConfig.class})
+@SpringBootTest(classes = { AuthService.class, ProviderMocksConfig.class })
 @TestPropertySource(locations = "classpath:test.yml")
 public class AuthServiceTest extends AbstractTestNGSpringContextTests {
 
@@ -80,7 +80,7 @@ public class AuthServiceTest extends AbstractTestNGSpringContextTests {
 
 		when(userRepository.findByEmail(dto.getEmail())).thenReturn(user);
 		when(userRepository.save(user)).thenReturn(null);
-		
+
 		authService.register(dto);
 
 		verify(userRepository, atMostOnce()).findByEmail(any(String.class));

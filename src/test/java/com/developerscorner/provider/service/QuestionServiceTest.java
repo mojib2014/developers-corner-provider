@@ -29,7 +29,7 @@ import com.developerscorner.provider.repository.QuestionRepository;
 import com.developerscorner.provider.repository.UserRepository;
 
 @ActiveProfiles("test")
-@SpringBootTest(classes = {QuestionService.class, UserService.class, UserServiceImple.class, ProviderMocksConfig.class})
+@SpringBootTest(classes = { QuestionService.class, UserService.class, ProviderMocksConfig.class })
 class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 
 	@Autowired
@@ -38,19 +38,19 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 	private QuestionRepository questionRepo;
 	@Autowired
 	private QuestionService questionService;
-	
+
 	private List<Question> questions = null;
 	private User user = null;
 	private Question question;
-	
+
 	@BeforeClass
 	public void setup() {
 		MockitoAnnotations.openMocks(this);
 		questions = new ArrayList<>();
-		
+
 		user = User.builder().id(1L).firstName("first name").lastName("last name").nickName("nick name").type("Mentor")
 				.email("first.name@email.com").password("123456").build();
-		
+
 		Question q1 = Question.builder()
 				.id(1L)
 				.username("username1")
@@ -59,9 +59,9 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 				.tags("Java")
 				.question("Java unit test with mockito")
 				.build();
-		
+
 		question = q1;
-		
+
 		Question q2 = Question.builder()
 				.id(2L)
 				.username("username1")
@@ -78,12 +78,12 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 				.tags("JavaScript")
 				.question("JavaScript scope")
 				.build();
-		
+
 		questions.add(q1);
 		questions.add(q2);
 		questions.add(q3);
 	}
-	
+
 	@Test
 	void shouldFindAllQuestions() throws Exception {
 		when(questionRepo.findAll()).thenReturn(questions);
@@ -94,7 +94,7 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 		
 		assertFalse(result.isEmpty());
 	}
-	
+
 	@Test
 	public void shouldFindQuestionById() {
 		when(questionRepo.findById(1L)).thenReturn(Optional.of(question));
@@ -104,7 +104,7 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 		verify(questionRepo, atMost(2)).findById(question.getId());
 		assertNotNull(result);
 	}
-	
+
 	@Test
 	public void shouldFindQuestionByUsername() {
 		when(questionRepo.findByUsername(question.getUsername())).thenReturn(Optional.of(question));
@@ -114,7 +114,7 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 		verify(questionRepo).findByUsername(question.getUsername());
 		assertNotNull(result);
 	}
-	
+
 	@Test
 	public void shouldFindQuestionByUserId() {
 		when(questionRepo.findByUserId(question.getUser().getId())).thenReturn(questions);
@@ -124,7 +124,7 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 		verify(questionRepo).findByUserId(question.getUser().getId());
 		assertFalse(result.isEmpty());
 	}
-	
+
 	@Test
 	public void shouldSaveAQuestion() throws Exception {
 		QuestionDto dto = QuestionDto.builder()
@@ -132,15 +132,15 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 				.username("new user")
 				.tags("new tags")
 				.question("new question inserted").build();
-		
+
 		when(userRepo.findById(anyLong())).thenReturn(Optional.of(user));
 		when(questionRepo.save(any(Question.class))).thenReturn(null);
-		
+
 		questionService.saveQuestion(dto);
-		
+
 		verify(questionRepo).save(any(Question.class));
 	}
-	
+
 	@Test
 	public void shouldUpdateAQuestion() throws Exception {
 		QuestionDto dto = QuestionDto.builder()
@@ -148,12 +148,12 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 				.username("new user")
 				.tags("new tags")
 				.question("new question inserted").build();
-		
+
 		when(questionRepo.findById(question.getId())).thenReturn(Optional.of(question));
 		when(questionRepo.save(any(Question.class))).thenReturn(null);
-		
+
 		questionService.updateQuestion(question.getId(), dto);
-		
+
 		verify(questionRepo, atMost(3)).save(any(Question.class));
 	}
 
@@ -166,9 +166,9 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 		
 		verify(questionRepo).deleteById(anyLong());
 	}
-	
+
 	// ===================== Negative tests =====================
-	
+
 	@Test(expectedExceptions = NotFoundException.class, expectedExceptionsMessageRegExp = "There are no questions.")
 	public void shouldThrowNotFoundExceptionIfNoQuestionsExists() {
 		when(questionRepo.findAll()).thenReturn(new ArrayList<>());
@@ -176,7 +176,7 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 		questionService.findAllQuestions();
 		//verify(questionRepo).findAll();
 	}
-	
+
 	@Test(expectedExceptions = NotFoundException.class, expectedExceptionsMessageRegExp = "Question not found")
 	public void shouldThrowNotFoundExceptionIfQuestionByIdNotExists() {
 		when(questionRepo.findById(100L)).thenReturn(Optional.empty());
@@ -184,7 +184,7 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 		questionService.findById(100L);
 		verify(questionRepo).findById(100L);
 	}
-	
+
 	@Test(expectedExceptions = NotFoundException.class, expectedExceptionsMessageRegExp = "Question not found")
 	public void shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists() {
 		when(questionRepo.findByUsername("username not exists")).thenReturn(Optional.empty());
@@ -192,7 +192,7 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 		questionService.findByUsername("username not exists");
 		verify(questionRepo).findByUsername("username not exists");
 	}
-	
+
 	@Test(expectedExceptions = NotFoundException.class, expectedExceptionsMessageRegExp = "There are no questions.")
 	public void shouldThrowNotFoundExceptionIfQuestionByUserIdNotExists() {
 		when(questionRepo.findByUserId(1000L)).thenReturn(new ArrayList<>());
@@ -200,7 +200,7 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 		questionService.findByUserId(1000L);
 		verify(questionRepo).findByUserId(1000L);
 	}
-	
+
 	@Test(expectedExceptions = NotFoundException.class, expectedExceptionsMessageRegExp = "User not found")
 	public void shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists() {
 		when(userRepo.findById(anyLong())).thenReturn(Optional.empty());
@@ -214,5 +214,5 @@ class QuestionServiceTest extends AbstractTestNGSpringContextTests {
 		
 		questionService.saveQuestion(dto);
 	}
-	
+
 }

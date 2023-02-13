@@ -27,7 +27,7 @@ import com.developerscorner.provider.model.User;
 import com.developerscorner.provider.repository.UserRepository;
 
 @ActiveProfiles("test")
-@SpringBootTest(classes = { UserService.class, UserServiceImple.class, ProviderMocksConfig.class })
+@SpringBootTest(classes = { UserService.class, ProviderMocksConfig.class })
 @TestPropertySource(locations = "classpath:test.yml")
 public class UserServiceTest extends AbstractTestNGSpringContextTests {
 
@@ -67,7 +67,7 @@ public class UserServiceTest extends AbstractTestNGSpringContextTests {
 		
 		verify(userRepository).findAll();
 	}
-	
+
 	@Test
 	public void shouldFindUserById() {
 		when(userRepository.findById(anyLong())).thenReturn(Optional.of(user));
@@ -87,7 +87,7 @@ public class UserServiceTest extends AbstractTestNGSpringContextTests {
 		verify(userRepository).findByEmail(user.getEmail());
 		assertNotNull(result);
 	}
-	
+
 	@Test
 	public void shouldSaveAUser() {
 		UserRegistrationDto dto = UserRegistrationDto.builder()
@@ -96,15 +96,15 @@ public class UserServiceTest extends AbstractTestNGSpringContextTests {
 				.type("user type")
 				.email("my.new.user@email.com")
 				.password("123456").build();
-		
+
 		when(userRepository.saveAndFlush(any(User.class))).thenReturn(any(User.class));
-		
+
 		User user = userService.save(dto);
-		
+
 		verify(userRepository).saveAndFlush(any(User.class));
 		assertNotNull(user);
 	}
-	
+
 	@Test
 	public void shouldUpdateAUser() {
 		UserRegistrationDto dto = UserRegistrationDto.builder()
@@ -113,22 +113,22 @@ public class UserServiceTest extends AbstractTestNGSpringContextTests {
 				.type("user type")
 				.email("my.new.user@email.com")
 				.password("123456").build();
-		
+
 		User updated = User.builder()
 				.id(1L)
 				.firstName("my new user")
 				.lastName("user new")
 				.type("user type")
 				.email("my.new.user@email.com").build();
-		
-		//when(userRepository.findById(user.getId())).thenReturn(Optional.of(user));
+
+		// when(userRepository.findById(user.getId())).thenReturn(Optional.of(user));
 		when(userRepository.save(any(User.class))).thenReturn(updated);
-		
+
 		userService.update(user.getId(), dto);
-		
+
 		verify(userRepository).save(updated);
 	}
-	
+
 	@Test
 	public void shouldDeleteAUser() {
 		when(userRepository.findById(anyLong())).thenReturn(Optional.of(user));
@@ -137,9 +137,9 @@ public class UserServiceTest extends AbstractTestNGSpringContextTests {
 		
 		verify(userRepository).deleteById(anyLong());
 	}
-	
+
 	// ===================== Negative tests =====================
-	
+
 	@Test(expectedExceptions = NotFoundException.class, expectedExceptionsMessageRegExp = "User not found") 
 	public void shouldThrowNotFoundExceptionIfUserByIdNotExists() {
 		when(userRepository.findById(1000L)).thenReturn(Optional.empty());
@@ -148,7 +148,7 @@ public class UserServiceTest extends AbstractTestNGSpringContextTests {
 		
 		verify(userRepository).findById(1000L);
 	}
-	
+
 	@Test(expectedExceptions = NotFoundException.class) 
 	public void shouldThrowNotFoundExceptionIfUserByEmailNotExists() {
 		when(userRepository.findByEmail(anyString())).thenReturn(null);
