@@ -22,7 +22,6 @@ public class QuestionService {
 	@Autowired
 	private UserService userService;
 
-
 	public List<Question> findAllQuestions() {
 		List<Question> questions = questionRepository.findAll();
 
@@ -31,48 +30,44 @@ public class QuestionService {
 		return questions;
 	}
 
-
 	public Question findById(Long id) {
 		return questionRepository.findById(id).orElseThrow(() -> new NotFoundException("Question not found"));
 	}
 
-	
 	public Question findByUsername(String username) {
-		return questionRepository.findByUsername(username).orElseThrow(() -> new NotFoundException("Question not found"));
+		return questionRepository.findByUsername(username)
+				.orElseThrow(() -> new NotFoundException("Question not found"));
 	}
-	
 
 	public List<Question> findByUserId(Long userId) {
 		List<Question> questions = questionRepository.findByUserId(userId);
-		if(questions.isEmpty()) throw new NotFoundException("There are no questions.");
-		
+		if (questions.isEmpty())
+			throw new NotFoundException("There are no questions.");
+
 		return questions;
 	}
 
-
 	public void saveQuestion(QuestionDto dto) {
 		User user = userService.findById(dto.getUserId());
-		
+
 		Question question = Question.builder()
 				.username(dto.getUsername())
 				.tags(dto.getTags())
 				.question(dto.getQuestion())
 				.createdAt(LocalDateTime.now())
 				.user(user).build();
-		
+
 		questionRepository.save(question);
 	}
-
 
 	public void updateQuestion(Long id, QuestionDto dto) throws Exception {
 		Question question = findById(id);
 		question.setUsername(dto.getUsername());
 		question.setTags(dto.getTags());
 		question.setQuestion(dto.getQuestion());
-	
+
 		questionRepository.save(question);
 	}
-
 
 	public void deleteById(Long id) {
 		Question question = findById(id);

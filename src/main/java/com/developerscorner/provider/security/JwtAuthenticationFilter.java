@@ -17,7 +17,6 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-// Todo: refactor to use cookies 
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
