@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -34,15 +33,18 @@ public class AuthService {
 	}
 
 	public AuthResponse register(UserRegistrationDto dto) {
-		User user = userRepository.findByEmail(dto.getEmail()).orElse(null);
+		User user = userRepository.findByEmail(dto.getEmail());
+
 		if (user != null)
-			throw new ConflictException("User already registered please login");
+			throw new ConflictException(String.format("User already exists with email %s", user.getEmail()));
 		else {
 			user = User.builder().firstName(dto.getFirstName()).lastName(dto.getLastName()).nickName(dto.getNickName())
 					.email(dto.getEmail()).password(passwordEncoder.encode(dto.getPassword())).type(dto.getType())
 					.createdAt(LocalDateTime.now()).build();
 
 			userRepository.save(user);
+			authenticationManager
+					.authenticate(new UsernamePasswordAuthenticationToken(user.getEmail(), dto.getPassword()));
 			String jwtToken = jwtService.generateToken(user);
 
 			return new AuthResponse(jwtToken);
@@ -51,9 +53,8 @@ public class AuthService {
 
 	public AuthResponse authenticate(UserLoginDto dto) {
 		authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(dto.getEmail(), dto.getPassword()));
-		User user = userRepository.findByEmail(dto.getEmail())
-				.orElseThrow(() -> new UsernameNotFoundException("Username not found"));
-		;
+		User user = userRepository.findByEmail(dto.getEmail());
+
 		String jwtToken = jwtService.generateToken(user);
 		return new AuthResponse(jwtToken);
 	}

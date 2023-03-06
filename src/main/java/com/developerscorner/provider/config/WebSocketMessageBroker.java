@@ -17,27 +17,29 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Configuration
 @EnableWebSocketMessageBroker
 public class WebSocketMessageBroker implements WebSocketMessageBrokerConfigurer {
-	
-	 @Override
-	  public void configureMessageBroker(MessageBrokerRegistry config) {
-		config.enableSimpleBroker("/queue");
-		config.setApplicationDestinationPrefixes("/student-mentor-chat");
-//	    config.setUserDestinationPrefix("/user");
-	  }
 
-	  @Override
-	  public void registerStompEndpoints(StompEndpointRegistry registry) {
-	    registry.addEndpoint("/secured-room").setAllowedOrigins("http://localhost:8080").withSockJS();
-	  }
-	  
-	  @Override
-	  public boolean configureMessageConverters(List<MessageConverter> messageConverter) {
-		  DefaultContentTypeResolver resolver = new DefaultContentTypeResolver();
-		  resolver.setDefaultMimeType(MimeTypeUtils.APPLICATION_JSON);
-		  MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
-		  converter.setObjectMapper(new ObjectMapper());
-		  converter.setContentTypeResolver(resolver);
-		  messageConverter.add(converter);
-		  return false;
-	  }
+	@Override
+	public void configureMessageBroker(MessageBrokerRegistry config) {
+		config.setApplicationDestinationPrefixes("/app");
+		config.enableSimpleBroker("/topic", "/specific");
+		config.setUserDestinationPrefix("/user");
+	}
+
+	@Override
+	public void registerStompEndpoints(StompEndpointRegistry registry) {
+		registry.addEndpoint("/ws")
+				.setAllowedOrigins("http://localhost:4200", "http://localhost:8080", "ws://localhost:4200/ws")
+				.withSockJS();
+	}
+
+	@Override
+	public boolean configureMessageConverters(List<MessageConverter> messageConverter) {
+		DefaultContentTypeResolver resolver = new DefaultContentTypeResolver();
+		resolver.setDefaultMimeType(MimeTypeUtils.APPLICATION_JSON);
+		MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
+		converter.setObjectMapper(new ObjectMapper().findAndRegisterModules());
+		converter.setContentTypeResolver(resolver);
+		messageConverter.add(converter);
+		return false;
+	}
 }

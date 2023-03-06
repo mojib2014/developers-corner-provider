@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.developerscorner.provider.uiTests.RegisterPageTest">
+        <methods>
+          <include name="close"/>
+          <include name="beforeMethodClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="shouldRegisterAUser"/>
+          <include name="shouldDisplayFieldIsRequiredIfOneOfTheFieldIsBlank"/>
+        </methods>
+      </class> <!-- com.developerscorner.provider.uiTests.RegisterPageTest -->
+      <class name="com.developerscorner.provider.service.AuthServiceTest">
+        <methods>
+          <include name="shouldRegisterAUser"/>
+          <include name="shouldThrowConflictExceptionIfUserExists"/>
+          <include name="shouldThrowUsernameNotFoundExceptionIfUserNotExists"/>
+          <include name="shouldAuthenticateAUser"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.developerscorner.provider.service.AuthServiceTest -->
+      <class name="com.developerscorner.provider.service.UserServiceTest">
+        <methods>
+          <include name="shouldUpdateAUser"/>
+          <include name="shouldSaveAUser"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="shouldThrowNotFoundExceptionIfUserByEmailNotExists"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="shouldFindUserByEmail"/>
+          <include name="setup"/>
+          <include name="shouldDeleteAUser"/>
+          <include name="shouldFindUserById"/>
+          <include name="shouldThrowNotFoundExceptionIfUserByIdNotExists"/>
+          <include name="shouldFindAllUsers"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.developerscorner.provider.service.UserServiceTest -->
+      <class name="com.developerscorner.provider.uiTests.QuestionsPageTest">
+        <methods>
+          <include name="close"/>
+          <include name="shouldCreateQuestion"/>
+          <include name="beforeMethodClass"/>
+          <include name="beforeSuite"/>
+          <include name="shouldGetQuestionsPage"/>
+          <include name="shouldEditAQuestion"/>
+          <include name="afterSuite"/>
+          <include name="shouldDeleteAQuestion"/>
+          <include name="shouldDisplayFieldRequiredIfOneOfTheFieldsIsBlank"/>
+        </methods>
+      </class> <!-- com.developerscorner.provider.uiTests.QuestionsPageTest -->
+      <class name="com.developerscorner.provider.uiTests.HomePageTest">
+        <methods>
+          <include name="shouldDisplayFieldIsRequiredIfUsernameNotFilled"/>
+          <include name="close"/>
+          <include name="beforeMethodClass"/>
+          <include name="shouldCreateQuestion"/>
+          <include name="beforeSuite"/>
+          <include name="shoulGetHomePage"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.developerscorner.provider.uiTests.HomePageTest -->
+      <class name="com.developerscorner.provider.uiTests.ProfilePageTest">
+        <methods>
+          <include name="shouldEditProfile"/>
+          <include name="close"/>
+          <include name="beforeMethodClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="shouldGetProfilePage"/>
+          <include name="shouldDisplayFieldRequiredIfOnceOfTheFieldsIsBlank"/>
+          <include name="shouldCheckCurrentUserExists"/>
+        </methods>
+      </class> <!-- com.developerscorner.provider.uiTests.ProfilePageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

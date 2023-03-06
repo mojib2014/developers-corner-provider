@@ -3,6 +3,7 @@ package com.developerscorner.provider.service;
 import java.time.LocalDateTime;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,8 +22,15 @@ public class UserService {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 
-	public List<User> findAllUsers() {
+	public List<User> findAll() {
 		return userRepository.findAll();
+	}
+
+	public User getLoggedinUser(Authentication authentication) {
+		String username = authentication.getName();
+
+		User user = userRepository.findByEmail(username);
+		return user;
 	}
 
 	public User findById(Long id) {
@@ -30,10 +38,15 @@ public class UserService {
 	}
 
 	public User findByEmail(String email) {
-		return userRepository.findByEmail(email).orElseThrow(() -> new NotFoundException("User not found"));
+		User user = userRepository.findByEmail(email);
+
+		if (user == null)
+			throw new NotFoundException("User not found");
+
+		return user;
 	}
 
-	public void saveUser(UserRegistrationDto user) {
+	public User save(UserRegistrationDto user) {
 		User newUser = User.builder()
 				.firstName(user.getFirstName())
 				.lastName(user.getLastName())
@@ -42,12 +55,13 @@ public class UserService {
 				.password(user.getPassword())
 				.type(user.getType())
 				.createdAt(LocalDateTime.now()).build();
-		
-		userRepository.save(newUser);
+
+		userRepository.saveAndFlush(newUser);
+		return newUser;
 	}
 
-	public void updateUser(Long id, UserRegistrationDto dto) {
-		User user = userRepository.findById(id).orElseThrow(() -> new NotFoundException("User not found"));
+	public void update(Long id, UserRegistrationDto dto) {
+		User user = findById(id);
 		user.setFirstName(dto.getFirstName());
 		user.setLastName(dto.getLastName());
 		user.setNickName(dto.getNickName());
@@ -58,8 +72,8 @@ public class UserService {
 		userRepository.save(user);
 	}
 
-	public void deleteById(Long id) {
-		userRepository.deleteById(id);
+	public void delete(Long id) {
+		User user = findById(id);
+		userRepository.deleteById(user.getId());
 	}
-
 }

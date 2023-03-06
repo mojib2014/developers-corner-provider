@@ -1,0 +1,1660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="58" passed="50" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-09T09:17:11 CST" name="Default suite" finished-at="2023-02-09T09:17:49 CST" duration-ms="38725">
+    <groups>
+    </groups>
+    <test started-at="2023-02-09T09:17:11 CST" name="Default test" finished-at="2023-02-09T09:17:49 CST" duration-ms="38725">
+      <class name="com.developerscorner.provider.service.UserServiceTest">
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestClass" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextPrepareTestInstance" finished-at="2023-02-09T09:17:24 CST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="setup" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldDeleteAUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldDeleteAUser()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="shouldDeleteAUser" finished-at="2023-02-09T09:17:24 CST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteAUser -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldDeleteAUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldFindAllUsers()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldFindAllUsers()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="shouldFindAllUsers" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindAllUsers -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldFindAllUsers()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method signature="shouldFindUserByEmail()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="shouldFindUserByEmail" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindUserByEmail -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldFindUserByEmail()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldFindUserByEmail()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldFindUserById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldFindUserById()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="shouldFindUserById" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindUserById -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldFindUserById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldSaveAUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldSaveAUser()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="shouldSaveAUser" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldSaveAUser -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldSaveAUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method signature="shouldThrowNotFoundExceptionIfUserByEmailNotExists()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="shouldThrowNotFoundExceptionIfUserByEmailNotExists" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <exception class="com.developerscorner.provider.exception.NotFoundException">
+            <message>
+              <![CDATA[User not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.developerscorner.provider.exception.NotFoundException: User not found
+at com.developerscorner.provider.service.UserServiceImple.findByEmail(UserServiceImple.java:37)
+at com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByEmailNotExists(UserServiceTest.java:156)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.developerscorner.provider.exception.NotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowNotFoundExceptionIfUserByEmailNotExists -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByEmailNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByEmailNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByIdNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldThrowNotFoundExceptionIfUserByIdNotExists()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="shouldThrowNotFoundExceptionIfUserByIdNotExists" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <exception class="com.developerscorner.provider.exception.NotFoundException">
+            <message>
+              <![CDATA[User not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.developerscorner.provider.exception.NotFoundException: User not found
+at com.developerscorner.provider.service.UserServiceImple.lambda$findById$0(UserServiceImple.java:31)
+at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+at com.developerscorner.provider.service.UserServiceImple.findById(UserServiceImple.java:31)
+at com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByIdNotExists(UserServiceTest.java:147)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.developerscorner.provider.exception.NotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowNotFoundExceptionIfUserByIdNotExists -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldThrowNotFoundExceptionIfUserByIdNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldUpdateAUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldUpdateAUser()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="shouldUpdateAUser" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldUpdateAUser -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.UserServiceTest.shouldUpdateAUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.developerscorner.provider.service.UserServiceTest@5ef0d29e]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestClass" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.developerscorner.provider.service.UserServiceTest -->
+      <class name="com.developerscorner.provider.service.AuthServiceTest">
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:11 CST" name="springTestContextBeforeTestClass" finished-at="2023-02-09T09:17:11 CST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:11 CST" name="springTestContextPrepareTestInstance" finished-at="2023-02-09T09:17:13 CST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="2021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="setUp" finished-at="2023-02-09T09:17:13 CST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:13 CST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.AuthServiceTest.shouldAuthenticateAUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldAuthenticateAUser()[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="shouldAuthenticateAUser" finished-at="2023-02-09T09:17:13 CST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAuthenticateAUser -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:13 CST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.AuthServiceTest.shouldAuthenticateAUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:13 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.AuthServiceTest.shouldRegisterAUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldRegisterAUser()[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="shouldRegisterAUser" finished-at="2023-02-09T09:17:13 CST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldRegisterAUser -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:13 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.AuthServiceTest.shouldRegisterAUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:13 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.AuthServiceTest.shouldThrowConflictExceptionIfUserExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldThrowConflictExceptionIfUserExists()[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="shouldThrowConflictExceptionIfUserExists" finished-at="2023-02-09T09:17:13 CST" duration-ms="2" status="PASS">
+          <exception class="com.developerscorner.provider.exception.ConflictException">
+            <message>
+              <![CDATA[User already exists with email first.name@email.com]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.developerscorner.provider.exception.ConflictException: User already exists with email first.name@email.com
+at com.developerscorner.provider.service.AuthServiceImple.register(AuthServiceImple.java:38)
+at com.developerscorner.provider.service.AuthServiceTest.shouldThrowConflictExceptionIfUserExists(AuthServiceTest.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.developerscorner.provider.exception.ConflictException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowConflictExceptionIfUserExists -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:13 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.AuthServiceTest.shouldThrowConflictExceptionIfUserExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:13 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.AuthServiceTest.shouldThrowUsernameNotFoundExceptionIfUserNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldThrowUsernameNotFoundExceptionIfUserNotExists()[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="shouldThrowUsernameNotFoundExceptionIfUserNotExists" finished-at="2023-02-09T09:17:13 CST" duration-ms="14" status="PASS">
+          <exception class="org.springframework.security.core.userdetails.UsernameNotFoundException">
+            <full-stacktrace>
+              <![CDATA[org.springframework.security.core.userdetails.UsernameNotFoundException
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.security.core.userdetails.UsernameNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowUsernameNotFoundExceptionIfUserNotExists -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:13 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.AuthServiceTest.shouldThrowUsernameNotFoundExceptionIfUserNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.developerscorner.provider.service.AuthServiceTest@51e8e6e6]" started-at="2023-02-09T09:17:13 CST" name="springTestContextAfterTestClass" finished-at="2023-02-09T09:17:13 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.developerscorner.provider.service.AuthServiceTest -->
+      <class name="com.developerscorner.provider.ProviderApplicationTests">
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.developerscorner.provider.ProviderApplicationTests@54361a9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextPrepareTestInstance" finished-at="2023-02-09T09:17:35 CST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="11220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.developerscorner.provider.ProviderApplicationTests@54361a9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestClass" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.ProviderApplicationTests@54361a9]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.ProviderApplicationTests.contextLoads()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="contextLoads()[pri:0, instance:com.developerscorner.provider.ProviderApplicationTests@54361a9]" started-at="2023-02-09T09:17:35 CST" name="contextLoads" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextLoads -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.ProviderApplicationTests@54361a9]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.ProviderApplicationTests.contextLoads()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.developerscorner.provider.ProviderApplicationTests@54361a9]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestClass" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.developerscorner.provider.ProviderApplicationTests -->
+      <class name="com.developerscorner.provider.uiTests.QuestionsPageTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:11 CST" name="beforeSuite" finished-at="2023-02-09T09:17:11 CST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethodClass()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:13 CST" name="beforeMethodClass" finished-at="2023-02-09T09:17:19 CST" duration-ms="5958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodClass -->
+        <test-method signature="shouldCreateQuestion()[pri:-1, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:19 CST" name="shouldCreateQuestion" finished-at="2023-02-09T09:17:20 CST" duration-ms="1051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateQuestion -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:20 CST" name="close" finished-at="2023-02-09T09:17:20 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="shouldDeleteAQuestion()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:20 CST" name="shouldDeleteAQuestion" finished-at="2023-02-09T09:17:20 CST" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteAQuestion -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:20 CST" name="close" finished-at="2023-02-09T09:17:20 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="shouldDisplayFieldRequiredIfOneOfTheFieldsIsBlank()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:20 CST" name="shouldDisplayFieldRequiredIfOneOfTheFieldsIsBlank" finished-at="2023-02-09T09:17:22 CST" duration-ms="1148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDisplayFieldRequiredIfOneOfTheFieldsIsBlank -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:22 CST" name="close" finished-at="2023-02-09T09:17:22 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="shouldEditAQuestion()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:22 CST" name="shouldEditAQuestion" finished-at="2023-02-09T09:17:23 CST" duration-ms="1272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldEditAQuestion -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:23 CST" name="close" finished-at="2023-02-09T09:17:23 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="shouldGetQuestionsPage()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:23 CST" name="shouldGetQuestionsPage" finished-at="2023-02-09T09:17:23 CST" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldGetQuestionsPage -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:23 CST" name="close" finished-at="2023-02-09T09:17:23 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.developerscorner.provider.uiTests.QuestionsPageTest@2e54db99]" started-at="2023-02-09T09:17:49 CST" name="afterSuite" finished-at="2023-02-09T09:17:50 CST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.developerscorner.provider.uiTests.QuestionsPageTest -->
+      <class name="com.developerscorner.provider.service.QuestionServiceTest">
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextPrepareTestInstance" finished-at="2023-02-09T09:17:35 CST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestClass" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="setup" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldDeleteAQuestion() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldDeleteAQuestion()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldDeleteAQuestion" finished-at="2023-02-09T09:17:35 CST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDeleteAQuestion -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldDeleteAQuestion() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.QuestionServiceTest.shouldFindAllQuestions() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldFindAllQuestions()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldFindAllQuestions" finished-at="2023-02-09T09:17:35 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindAllQuestions -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.QuestionServiceTest.shouldFindAllQuestions() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldFindQuestionById()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldFindQuestionById" finished-at="2023-02-09T09:17:35 CST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindQuestionById -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionByUserId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldFindQuestionByUserId()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldFindQuestionByUserId" finished-at="2023-02-09T09:17:35 CST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindQuestionByUserId -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionByUserId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method signature="shouldFindQuestionByUsername()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldFindQuestionByUsername" finished-at="2023-02-09T09:17:35 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindQuestionByUsername -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionByUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldFindQuestionByUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method signature="shouldSaveAQuestion()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldSaveAQuestion" finished-at="2023-02-09T09:17:35 CST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldSaveAQuestion -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldSaveAQuestion() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldSaveAQuestion() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfNoQuestionsExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldThrowNotFoundExceptionIfNoQuestionsExists()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldThrowNotFoundExceptionIfNoQuestionsExists" finished-at="2023-02-09T09:17:35 CST" duration-ms="2" status="PASS">
+          <exception class="com.developerscorner.provider.exception.NotFoundException">
+            <message>
+              <![CDATA[There are no questions.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.developerscorner.provider.exception.NotFoundException: There are no questions.
+at com.developerscorner.provider.service.QuestionService.findAllQuestions(QuestionService.java:30)
+at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfNoQuestionsExists(QuestionServiceTest.java:176)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.developerscorner.provider.exception.NotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowNotFoundExceptionIfNoQuestionsExists -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfNoQuestionsExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByIdNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldThrowNotFoundExceptionIfQuestionByIdNotExists()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldThrowNotFoundExceptionIfQuestionByIdNotExists" finished-at="2023-02-09T09:17:35 CST" duration-ms="2" status="PASS">
+          <exception class="com.developerscorner.provider.exception.NotFoundException">
+            <message>
+              <![CDATA[Question not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.developerscorner.provider.exception.NotFoundException: Question not found
+at com.developerscorner.provider.service.QuestionService.lambda$findById$0(QuestionService.java:36)
+at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+at com.developerscorner.provider.service.QuestionService.findById(QuestionService.java:36)
+at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByIdNotExists(QuestionServiceTest.java:184)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.developerscorner.provider.exception.NotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowNotFoundExceptionIfQuestionByIdNotExists -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByIdNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUserIdNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldThrowNotFoundExceptionIfQuestionByUserIdNotExists()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldThrowNotFoundExceptionIfQuestionByUserIdNotExists" finished-at="2023-02-09T09:17:35 CST" duration-ms="2" status="PASS">
+          <exception class="com.developerscorner.provider.exception.NotFoundException">
+            <message>
+              <![CDATA[There are no questions.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.developerscorner.provider.exception.NotFoundException: There are no questions.
+at com.developerscorner.provider.service.QuestionService.findByUserId(QuestionService.java:47)
+at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUserIdNotExists(QuestionServiceTest.java:200)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.developerscorner.provider.exception.NotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowNotFoundExceptionIfQuestionByUserIdNotExists -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUserIdNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists" finished-at="2023-02-09T09:17:35 CST" duration-ms="2" status="PASS">
+          <exception class="com.developerscorner.provider.exception.NotFoundException">
+            <message>
+              <![CDATA[Question not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.developerscorner.provider.exception.NotFoundException: Question not found
+at com.developerscorner.provider.service.QuestionService.lambda$findByUsername$1(QuestionService.java:41)
+at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+at com.developerscorner.provider.service.QuestionService.findByUsername(QuestionService.java:41)
+at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists(QuestionServiceTest.java:192)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.developerscorner.provider.exception.NotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionIfQuestionByUsernameNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method signature="shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists" finished-at="2023-02-09T09:17:35 CST" duration-ms="4" status="PASS">
+          <exception class="com.developerscorner.provider.exception.NotFoundException">
+            <message>
+              <![CDATA[User not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.developerscorner.provider.exception.NotFoundException: User not found
+at com.developerscorner.provider.service.UserServiceImple.lambda$findById$0(UserServiceImple.java:31)
+at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+at com.developerscorner.provider.service.UserServiceImple.findById(UserServiceImple.java:31)
+at com.developerscorner.provider.service.QuestionService.saveQuestion(QuestionService.java:54)
+at com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists(QuestionServiceTest.java:215)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.developerscorner.provider.exception.NotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldThrowNotFoundExceptionSavingAQuestionIfUserNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldUpdateAQuestion() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldUpdateAQuestion()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="shouldUpdateAQuestion" finished-at="2023-02-09T09:17:35 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldUpdateAQuestion -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:35 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.developerscorner.provider.service.QuestionServiceTest.shouldUpdateAQuestion() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.developerscorner.provider.service.QuestionServiceTest@47874b25]" started-at="2023-02-09T09:17:35 CST" name="springTestContextAfterTestClass" finished-at="2023-02-09T09:17:35 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.developerscorner.provider.service.QuestionServiceTest -->
+      <class name="com.developerscorner.provider.uiTests.HomePageTest">
+        <test-method is-config="true" signature="beforeMethodClass()[pri:0, instance:com.developerscorner.provider.uiTests.HomePageTest@33617539]" started-at="2023-02-09T09:17:35 CST" name="beforeMethodClass" finished-at="2023-02-09T09:17:37 CST" duration-ms="1643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodClass -->
+        <test-method signature="shoulGetHomePage()[pri:0, instance:com.developerscorner.provider.uiTests.HomePageTest@33617539]" started-at="2023-02-09T09:17:37 CST" name="shoulGetHomePage" finished-at="2023-02-09T09:17:38 CST" duration-ms="879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shoulGetHomePage -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.HomePageTest@33617539]" started-at="2023-02-09T09:17:38 CST" name="close" finished-at="2023-02-09T09:17:38 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="shouldDisplayFieldIsRequiredIfUsernameNotFilled()[pri:0, instance:com.developerscorner.provider.uiTests.HomePageTest@33617539]" started-at="2023-02-09T09:17:38 CST" name="shouldDisplayFieldIsRequiredIfUsernameNotFilled" finished-at="2023-02-09T09:17:39 CST" duration-ms="1121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDisplayFieldIsRequiredIfUsernameNotFilled -->
+        <test-method signature="shouldCreateQuestion()[pri:1, instance:com.developerscorner.provider.uiTests.HomePageTest@33617539]" started-at="2023-02-09T09:17:39 CST" name="shouldCreateQuestion" finished-at="2023-02-09T09:17:40 CST" duration-ms="1175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCreateQuestion -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.HomePageTest@33617539]" started-at="2023-02-09T09:17:39 CST" name="close" finished-at="2023-02-09T09:17:39 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.HomePageTest@33617539]" started-at="2023-02-09T09:17:40 CST" name="close" finished-at="2023-02-09T09:17:40 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.developerscorner.provider.uiTests.HomePageTest -->
+      <class name="com.developerscorner.provider.uiTests.RegisterPageTest">
+        <test-method is-config="true" signature="beforeMethodClass()[pri:0, instance:com.developerscorner.provider.uiTests.RegisterPageTest@2c177f9e]" started-at="2023-02-09T09:17:40 CST" name="beforeMethodClass" finished-at="2023-02-09T09:17:42 CST" duration-ms="1759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodClass -->
+        <test-method signature="shouldDisplayFieldIsRequiredIfOneOfTheFieldIsBlank()[pri:0, instance:com.developerscorner.provider.uiTests.RegisterPageTest@2c177f9e]" started-at="2023-02-09T09:17:42 CST" name="shouldDisplayFieldIsRequiredIfOneOfTheFieldIsBlank" finished-at="2023-02-09T09:17:44 CST" duration-ms="1653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDisplayFieldIsRequiredIfOneOfTheFieldIsBlank -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.RegisterPageTest@2c177f9e]" started-at="2023-02-09T09:17:44 CST" name="close" finished-at="2023-02-09T09:17:44 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="shouldRegisterAUser()[pri:0, instance:com.developerscorner.provider.uiTests.RegisterPageTest@2c177f9e]" started-at="2023-02-09T09:17:44 CST" name="shouldRegisterAUser" finished-at="2023-02-09T09:17:44 CST" duration-ms="871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldRegisterAUser -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.RegisterPageTest@2c177f9e]" started-at="2023-02-09T09:17:44 CST" name="close" finished-at="2023-02-09T09:17:44 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.developerscorner.provider.uiTests.RegisterPageTest -->
+      <class name="com.developerscorner.provider.uiTests.ProfilePageTest">
+        <test-method is-config="true" signature="beforeMethodClass()[pri:0, instance:com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359]" started-at="2023-02-09T09:17:44 CST" name="beforeMethodClass" finished-at="2023-02-09T09:17:46 CST" duration-ms="1287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodClass -->
+        <test-method signature="shouldCheckCurrentUserExists()[pri:-1, instance:com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359]" started-at="2023-02-09T09:17:46 CST" name="shouldCheckCurrentUserExists" finished-at="2023-02-09T09:17:46 CST" duration-ms="562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCheckCurrentUserExists -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359]" started-at="2023-02-09T09:17:46 CST" name="close" finished-at="2023-02-09T09:17:46 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="shouldDisplayFieldRequiredIfOnceOfTheFieldsIsBlank()[pri:0, instance:com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359]" started-at="2023-02-09T09:17:46 CST" name="shouldDisplayFieldRequiredIfOnceOfTheFieldsIsBlank" finished-at="2023-02-09T09:17:47 CST" duration-ms="990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDisplayFieldRequiredIfOnceOfTheFieldsIsBlank -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359]" started-at="2023-02-09T09:17:47 CST" name="close" finished-at="2023-02-09T09:17:47 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="shouldEditProfile()[pri:0, instance:com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359]" started-at="2023-02-09T09:17:47 CST" name="shouldEditProfile" finished-at="2023-02-09T09:17:49 CST" duration-ms="1485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldEditProfile -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359]" started-at="2023-02-09T09:17:49 CST" name="close" finished-at="2023-02-09T09:17:49 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method signature="shouldGetProfilePage()[pri:0, instance:com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359]" started-at="2023-02-09T09:17:49 CST" name="shouldGetProfilePage" finished-at="2023-02-09T09:17:49 CST" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldGetProfilePage -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.developerscorner.provider.uiTests.ProfilePageTest@5db4c359]" started-at="2023-02-09T09:17:49 CST" name="close" finished-at="2023-02-09T09:17:49 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.developerscorner.provider.uiTests.ProfilePageTest -->
+      <class name="com.developerscorner.provider.service.ChatMessageServiceTest">
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:23 CST" name="springTestContextBeforeTestClass" finished-at="2023-02-09T09:17:23 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:23 CST" name="springTestContextPrepareTestInstance" finished-at="2023-02-09T09:17:24 CST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="setup" finished-at="2023-02-09T09:17:24 CST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldCountNewMessages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldCountNewMessages()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="shouldCountNewMessages" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldCountNewMessages -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldCountNewMessages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method signature="shouldFindChatMessageById()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="shouldFindChatMessageById" finished-at="2023-02-09T09:17:24 CST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindChatMessageById -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageByReceiver()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldFindChatMessageByReceiver()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="shouldFindChatMessageByReceiver" finished-at="2023-02-09T09:17:24 CST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindChatMessageByReceiver -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageByReceiver()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageBySender()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldFindChatMessageBySender()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="shouldFindChatMessageBySender" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindChatMessageBySender -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessageBySender()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldFindChatMessages()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="shouldFindChatMessages" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindChatMessages -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessagesBySenderAndReceiver()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldFindChatMessagesBySenderAndReceiver()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="shouldFindChatMessagesBySenderAndReceiver" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFindChatMessagesBySenderAndReceiver -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldFindChatMessagesBySenderAndReceiver()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldSaveChatMessage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldSaveChatMessage()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="shouldSaveChatMessage" finished-at="2023-02-09T09:17:24 CST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldSaveChatMessage -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldSaveChatMessage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByIdNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldThrowNotFoundExceptionIfByIdNotExists()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="shouldThrowNotFoundExceptionIfByIdNotExists" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <exception class="com.developerscorner.provider.exception.NotFoundException">
+            <message>
+              <![CDATA[Message not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.developerscorner.provider.exception.NotFoundException: Message not found
+at com.developerscorner.provider.service.ChatMessageService.lambda$findMessageById$1(ChatMessageService.java:51)
+at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+at com.developerscorner.provider.service.ChatMessageService.findMessageById(ChatMessageService.java:51)
+at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByIdNotExists(ChatMessageServiceTest.java:185)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.developerscorner.provider.exception.NotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowNotFoundExceptionIfByIdNotExists -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByIdNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByReceiverNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldThrowNotFoundExceptionIfByReceiverNotExists()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="shouldThrowNotFoundExceptionIfByReceiverNotExists" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <exception class="com.developerscorner.provider.exception.NotFoundException">
+            <message>
+              <![CDATA[Message not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.developerscorner.provider.exception.NotFoundException: Message not found
+at com.developerscorner.provider.service.ChatMessageService.lambda$findMessageByReciever$3(ChatMessageService.java:59)
+at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+at com.developerscorner.provider.service.ChatMessageService.findMessageByReciever(ChatMessageService.java:59)
+at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByReceiverNotExists(ChatMessageServiceTest.java:203)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.developerscorner.provider.exception.NotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowNotFoundExceptionIfByReceiverNotExists -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfByReceiverNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfBySenderNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldThrowNotFoundExceptionIfBySenderNotExists()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="shouldThrowNotFoundExceptionIfBySenderNotExists" finished-at="2023-02-09T09:17:24 CST" duration-ms="2" status="PASS">
+          <exception class="com.developerscorner.provider.exception.NotFoundException">
+            <message>
+              <![CDATA[Message not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.developerscorner.provider.exception.NotFoundException: Message not found
+at com.developerscorner.provider.service.ChatMessageService.lambda$findMessageBySender$2(ChatMessageService.java:55)
+at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+at com.developerscorner.provider.service.ChatMessageService.findMessageBySender(ChatMessageService.java:55)
+at com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfBySenderNotExists(ChatMessageServiceTest.java:194)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:186)
+at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.developerscorner.provider.exception.NotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowNotFoundExceptionIfBySenderNotExists -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldThrowNotFoundExceptionIfBySenderNotExists()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextBeforeTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldUpdateStatuses()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="shouldUpdateStatuses()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="shouldUpdateStatuses" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldUpdateStatuses -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestMethod" finished-at="2023-02-09T09:17:24 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void com.developerscorner.provider.service.ChatMessageServiceTest.shouldUpdateStatuses()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.developerscorner.provider.service.ChatMessageServiceTest@3f1c5af9]" started-at="2023-02-09T09:17:24 CST" name="springTestContextAfterTestClass" finished-at="2023-02-09T09:17:24 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.developerscorner.provider.service.ChatMessageServiceTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

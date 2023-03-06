@@ -21,12 +21,10 @@ public class MyUserDetailsService implements UserDetailsService {
 	@Override
 	@Transactional
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		 final User user = (User) userRepository.findByEmail(username).orElseThrow(() -> new UsernameNotFoundException("user not found"));
-	        if (user == null) {
-	            throw new UsernameNotFoundException(String.format("User '%s' not found.", username));
-	        }
-	        UserDetails u = org.springframework.security.core.userdetails.User.withUsername(user.getEmail()).password(user.getPassword()).authorities("USER").build();
-	        return u;
+		 final User user = userRepository.findByEmail(username);
+	     
+	     UserDetails u = org.springframework.security.core.userdetails.User.withUsername(user.getEmail()).password(user.getPassword()).authorities("USER").build();
+	    return u;
 	}
 
 }
